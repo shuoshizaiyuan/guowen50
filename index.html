@@ -1,0 +1,1150 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>中国古代诗文五十篇 · 全篇 · 批注 · 赏析 · 双栏对照翻译</title>
+<style>
+  :root{--bg:#f7f5f0;--card:#fff;--ink:#2b2620;--sub:#6f6659;--accent:#8c2f24;--accent2:#1f4e5f;--line:#e5ddcf;}
+  *{box-sizing:border-box;margin:0;padding:0;}
+  body{background:var(--bg);color:var(--ink);font-family:"Noto Serif SC","Source Han Serif SC","SimSun",serif;line-height:1.9;}
+  .cover{min-height:96vh;background:linear-gradient(160deg,#241f19,#3a3128 60%,#4a3c2c);color:#f3ece0;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;padding:40px;}
+  .cover h1{font-size:40px;letter-spacing:12px;margin-bottom:14px;}
+  .cover .c2{font-size:16px;color:#cbbfa9;letter-spacing:4px;}
+  .cover .c3{margin-top:34px;font-size:13.5px;color:#a89c88;line-height:2.2;max-width:640px;}
+  .cover .c4{margin-top:40px;font-size:12px;color:#877a63;letter-spacing:2px;}
+  .toc-page{max-width:900px;margin:0 auto;padding:50px 20px;}
+  .toc-page h2{font-size:22px;letter-spacing:4px;border-left:5px solid var(--accent);padding-left:14px;margin-bottom:18px;}
+  .toc-cols{display:grid;grid-template-columns:1fr 1fr;gap:4px 30px;}
+  .toc-cols a{display:flex;gap:8px;font-size:14px;color:var(--ink);text-decoration:none;padding:5px 8px;border-bottom:1px dashed var(--line);}
+  .toc-cols a:hover{background:#efe9db;}
+  .toc-cols .n{color:#b3a58c;min-width:30px;}
+  .toc-cols .soon{color:#b9ad97;font-style:italic;}
+  .grid-page{max-width:1060px;margin:0 auto;padding:30px 20px 80px;}
+  .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(330px,1fr));gap:14px;}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:8px;padding:14px 16px;cursor:pointer;box-shadow:0 1px 3px rgba(60,50,30,.06);transition:transform .12s;}
+  .card:hover{transform:translateY(-2px);}
+  .card .t{font-size:15.5px;font-weight:700;}
+  .card .a{font-size:12.5px;color:var(--sub);}
+  .card .q{font-size:13px;color:#5a4a30;margin-top:6px;font-style:italic;}
+  .placeholder{border:1px dashed #c9bfa8;border-radius:8px;padding:14px 16px;color:#a89c88;font-size:13.5px;background:#faf7f0;}
+  #reader{display:none;max-width:900px;margin:0 auto;padding:36px 20px 90px;}
+  .r-bar{display:flex;gap:10px;margin-bottom:26px;flex-wrap:wrap;}
+  .r-bar button,.btn2{font-family:inherit;font-size:13.5px;padding:7px 18px;border-radius:20px;border:1px solid var(--line);background:#fff;color:var(--sub);cursor:pointer;}
+  .r-bar button:hover,.btn2:hover{background:var(--ink);color:#f3ece0;}
+  .p-head{text-align:center;border-bottom:2px solid var(--line);padding-bottom:18px;margin-bottom:26px;}
+  .p-head .p-no{font-size:13px;color:#b3a58c;letter-spacing:3px;}
+  .p-head h2{font-size:26px;letter-spacing:4px;margin:8px 0 6px;}
+  .p-head .p-meta{font-size:12.5px;color:var(--sub);}
+  .original{font-size:19px;line-height:2.4;padding:26px 30px;background:#fffdf7;border:1px solid var(--line);border-radius:8px;}
+  .original p{margin:0 0 16px;}
+  .original p:last-child{margin-bottom:0;}
+  sup.yi{color:#8c2f24;font-size:.62em;font-weight:700;margin:0 1px;}
+  sup.py{color:#2e6e46;font-size:.62em;font-weight:700;margin:0 1px;}
+  .p-block{margin-top:26px;}
+  .p-block h3{font-size:16px;letter-spacing:3px;color:var(--accent2);border-left:4px solid var(--accent2);padding-left:10px;margin-bottom:10px;}
+  .p-block p.sh{font-size:14.5px;color:#4c4437;text-align:justify;}
+  ol.yi-list{list-style:none;counter-reset:yi;}
+  ol.yi-list li{counter-increment:yi;font-size:13.5px;color:#6b3a33;background:#fdf4f2;border-left:3px solid #d89a8e;padding:7px 12px 7px 34px;margin-bottom:6px;border-radius:4px;position:relative;text-align:justify;}
+  ol.yi-list li::before{content:counter(yi);position:absolute;left:10px;top:9px;width:18px;height:18px;background:#8c2f24;color:#fff;border-radius:50%;font-size:11px;text-align:center;line-height:18px;font-family:sans-serif;}
+  ol.py-list{list-style:none;counter-reset:py;}
+  ol.py-list li{counter-increment:py;font-size:13.5px;color:#2f5c46;background:#eff7f1;border-left:3px solid #7db894;padding:7px 12px 7px 34px;margin-bottom:6px;border-radius:4px;position:relative;}
+  ol.py-list li::before{content:counter(py);position:absolute;left:10px;top:9px;width:18px;height:18px;background:#2e6e46;color:#fff;border-radius:50%;font-size:11px;text-align:center;line-height:18px;font-family:sans-serif;}
+  ol.py-list li b{color:#1f5c3d;}
+  .btn2.primary{background:var(--accent);border-color:var(--accent);color:#fff;font-size:15px;padding:10px 30px;display:block;margin:30px auto 0;}
+  /* 双栏对照视图 */
+  .duo-view{display:none;}
+  .duo-grid{display:grid;grid-template-columns:1fr 1fr;background:#fffdf7;border:1px solid var(--line);border-radius:8px;overflow:hidden;}
+  .duo-src,.duo-tr{padding:18px 22px;font-size:16px;line-height:2.1;border-bottom:1px dashed var(--line);}
+  .duo-src{border-right:1px solid var(--line);color:var(--ink);}
+  .duo-tr{color:#33565f;background:#f6f9f4;}
+  .duo-head{display:grid;grid-template-columns:1fr 1fr;font-weight:700;font-size:15px;letter-spacing:2px;}
+  .duo-head div{padding:10px 22px;background:#efe9db;}
+  .duo-head div:last-child{color:var(--accent2);}
+  .duo-head div:first-child{color:var(--accent);}
+  @media print{
+    body{background:#fff;font-size:12pt;}
+    .grid-page,.r-bar,.noprint{display:none !important;}
+    .cover{min-height:100vh;page-break-after:always;}
+    .toc-page{page-break-after:always;}
+    #reader{display:block !important;padding:0;max-width:100%;}
+    .piece{display:block !important;page-break-before:always;}
+    .duo-view{display:none !important;}
+    .normal-view{display:block !important;}
+    .original{background:#fff;border:none;font-size:13.5pt;}
+  }
+</style>
+</head>
+<body>
+
+<div class="cover">
+  <h1>中国古代诗文五十篇</h1>
+  <div class="c2">全篇原文 · 编号批注（读音／意思） · 赏析 · 双栏对照翻译</div>
+  <div class="c3">选目四条：整篇崇高，非单句出名；文坛崇高，非民间流传；水平高，非知名度高；十二年基础教育（含旧人教体系）未收录。<br>原文以所据权威底本为准，一字不删改。</div>
+  <div class="c4">诗词三十 · 文章十五 · 史传五 ｜ 共五十篇</div>
+</div>
+
+<div class="toc-page">
+  <h2>目 录</h2>
+  <div class="toc-cols">
+    <a href="#p01"><span class="n">01</span>诗经·豳风·七月</a>
+    <a href="#p02"><span class="n">02</span>上邪（汉乐府）</a>
+    <a href="#p03"><span class="n">03</span>行行重行行（古诗十九首）</a>
+    <a href="#p04"><span class="n">04</span>燕歌行（曹丕）</a>
+    <a href="#p05"><span class="n">05</span>咏怀·其一（阮籍）</a>
+    <a href="#p06"><span class="n">06</span>咏史·其二（左思）</a>
+    <a href="#p07"><span class="n">07</span>读山海经·其十（陶渊明）</a>
+    <a href="#p08"><span class="n">08</span>代悲白头翁（刘希夷）</a>
+    <a href="#p09"><span class="n">09</span>感遇·其一（张九龄）</a>
+    <a href="#p10"><span class="n">10</span>终南山（王维）</a>
+    <a href="#p11"><span class="n">11</span>月下独酌·其一（李白）</a>
+    <a href="#p12"><span class="n">12</span>赠卫八处士（杜甫）</a>
+    <a href="#p13"><span class="n">13</span>秋兴八首（杜甫·全组）</a>
+    <a href="#p14"><span class="n">14</span>山石（韩愈）</a>
+    <a href="#p15"><span class="n">15</span>西塞山怀古（刘禹锡）</a>
+    <a href="#p16"><span class="n">16</span>金铜仙人辞汉歌（李贺）</a>
+    <a href="#p17"><span class="n">17</span>马嵬·其二（李商隐）</a>
+    <a href="#p18"><span class="n">18</span>浪淘沙令（李煜）</a>
+    <a href="#p19"><span class="n">19</span>八声甘州（柳永）</a>
+    <a href="#p20"><span class="n">20</span>蝶恋花（晏殊）</a>
+    <a href="#p21"><span class="n">21</span>蝶恋花（欧阳修）</a>
+    <a href="#p22"><span class="n">22</span>临江仙（晏几道）</a>
+    <a href="#p23"><span class="n">23</span>明妃曲·其一（王安石）</a>
+    <a href="#p24"><span class="n">24</span>水龙吟·杨花（苏轼）</a>
+    <a href="#p25"><span class="n">25</span>兰陵王·柳（周邦彦）</a>
+    <a href="#p26"><span class="n">26</span>永遇乐（李清照）</a>
+    <a href="#p27"><span class="n">27</span>贺新郎（辛弃疾）</a>
+    <a href="#p28"><span class="n">28</span>暗香·疏影（姜夔）</a>
+    <a href="#p29"><span class="n">29</span>关山月（陆游）</a>
+    <a href="#p30"><span class="n">30</span>摸鱼儿·雁丘词（元好问）</a>
+    <a class="soon" href="#"><span class="n">31–45</span>文章十五篇（第二批录入中）</a>
+    <a class="soon" href="#"><span class="n">46–50</span>史传五篇（第三批录入中）</a>
+  </div>
+</div>
+
+<div class="grid-page noprint" id="gridPage"><div class="grid" id="grid"></div></div>
+
+<div id="reader">
+
+<!-- 01 -->
+<section class="piece" id="p01">
+<div class="p-head"><span class="p-no">之一 · 诗词</span><h2>诗经 · 豳风 · 七月</h2><p class="p-meta">西周 · 无名氏 ｜ 底本：程俊英、蒋见元《诗经注析》（中华书局）</p></div>
+<div class="normal-view">
+<div class="original">
+<p>七月流火<sup class="yi">1</sup>，九月授衣。一之日觱发<sup class="py">1</sup>，二之日栗烈<sup class="py">2</sup>。无衣无褐<sup class="yi">2</sup>，何以卒岁？三之日于耜<sup class="py">3</sup>，四之日举趾。同我妇子，馌<sup class="py">4</sup>彼南亩，田畯至喜。</p>
+<p>七月流火，九月授衣。春日载阳，有鸣仓庚。女执懿筐，遵彼微行，爰求柔桑。春日迟迟，采蘩祁祁。女心伤悲，殆及公子同归<sup class="yi">3</sup>。</p>
+<p>七月流火，八月萑苇<sup class="py">5</sup>。蚕月条桑，取彼斧斨<sup class="py">6</sup>，以伐远扬，猗彼女桑。七月鸣鵙<sup class="py">7</sup>，八月载绩。载玄载黄，我朱孔阳，为公子裳。</p>
+<p>四月秀葽<sup class="py">8</sup>，五月鸣蜩。八月其获，十月陨萚<sup class="py">9</sup>。一之日于貉，取彼狐狸，为公子裘。二之日其同，载缵武功。言私其豵<sup class="py">10</sup>，献豣<sup class="py">11</sup>于公<sup class="yi">4</sup>。</p>
+<p>五月斯螽<sup class="py">12</sup>动股，六月莎鸡振羽。七月在野，八月在宇，九月在户，十月蟋蟀入我床下。穹窒熏鼠，塞向墐户。嗟我妇子，曰为改岁，入此室处。</p>
+<p>六月食郁及薁<sup class="py">13</sup>，七月亨<sup class="py">14</sup>葵及菽。八月剥枣，十月获稻。为此春酒，以介眉寿。七月食瓜，八月断壶，九月叔苴<sup class="py">15</sup>。采荼薪樗<sup class="py">16</sup>，食我农夫。</p>
+<p>九月筑场圃，十月纳禾稼。黍稷重穋<sup class="py">17</sup>，禾麻菽麦。嗟我农夫，我稼既同，上入执宫功。昼尔于茅，宵尔索绹<sup class="py">18</sup>。亟其乘屋，其始播百谷。</p>
+<p>二之日凿冰冲冲，三之日纳于凌阴。四之日其蚤，献羔祭韭。九月肃霜，十月涤场。朋酒斯飨，曰杀羔羊。跻彼公堂，称彼兕觥<sup class="py">19</sup>，万寿无疆！</p>
+</div>
+<div class="p-block"><h3>赏析</h3><p class="sh">八章八十八句，《诗经》中体量最大的农事史诗。以"七月流火"起调，按月令铺开一整年：耕种、蚕桑、纺绩、狩猎、凿冰、酿酒、修屋、宴饮。妙在不空喊苦，只把"为公子裳""食我农夫"这类事实摆出来，同情自在其中。末章公堂称觥，苦尽一甜，余味极厚。</p></div>
+<div class="p-block"><h3>批注 · 意思</h3><ol class="yi-list">
+<li>七月流火："火"指大火星（心宿二），西流则暑退将寒——记时令，不是说天气热。</li>
+<li>无衣无褐：褐=粗布短衣；连粗衣都没有，全诗唯一的直接呼告，是理解全诗阶级关系的钥匙。</li>
+<li>殆及公子同归：殆=害怕；少女惧被公子带走，一句写尽蚕女处境，古今注家聚讼处。</li>
+<li>言私其豵，献豣于公：猎得小猪归己、大猪献公——分配制度的实录。</li>
+</ol></div>
+<div class="p-block"><h3>批注 · 生僻字读音</h3><ol class="py-list">
+<li><b>觱发</b>（bì bō）：风寒声。</li>
+<li><b>栗烈</b>（lì liè）：即凛冽，寒气刺骨。</li>
+<li><b>于耜</b>（sì）：修理翻土的农具；耜，类似犁铧。</li>
+<li><b>馌</b>（yè）：送饭到田头。</li>
+<li><b>萑苇</b>（huán wěi）：芦苇一类的草，八月收割备蚕事。</li>
+<li><b>斧斨</b>（qiāng）：方孔的斧子叫斨。</li>
+<li><b>鵙</b>（jú）：伯劳鸟。</li>
+<li><b>秀葽</b>（yāo）：葽草（远志）开花结籽。</li>
+<li><b>陨萚</b>（tuò）：草木落叶坠落。</li>
+<li><b>豵</b>（zōng）：一岁的小猪。</li>
+<li><b>豣</b>（jiān）：三岁的大猪。</li>
+<li><b>斯螽</b>（zhōng）：蚱蜢一类鸣虫。</li>
+<li><b>薁</b>（yù）：野葡萄（蘡薁）。</li>
+<li><b>亨</b>（pēng）：同"烹"，煮。</li>
+<li><b>苴</b>（jū）：麻籽，可食。</li>
+<li><b>薪樗</b>（chū）：砍臭椿当柴；樗，臭椿树。</li>
+<li><b>重穋</b>（tóng lù）：先种后熟的谷叫"重"，后种先熟的叫"穋"。</li>
+<li><b>索绹</b>（táo）：搓绳索。</li>
+<li><b>兕觥</b>（sì gōng）：犀牛角制的酒杯。</li>
+</ol></div>
+<button class="btn2 primary" onclick="openDuo('p01')">对照翻译 ⇄</button>
+</div>
+<div class="duo-view">
+<div class="r-bar noprint"><button onclick="backDuo('p01')">← 返回原文视图</button></div>
+<div class="duo-head"><div>原 文</div><div>译 文</div></div>
+<div class="duo-grid"></div>
+<div class="tr-data" hidden>
+<p>七月里大火星向西沉，九月里就该发放寒衣了。十一月寒风噼啪作响，十二月寒气刺骨凛冽。粗布短衣都没有，拿什么熬过这一年？正月修好农具，二月下田耕种。带着老婆孩子送饭到南边田头，田官见了满心欢喜。</p>
+<p>七月大火星西沉，九月发放寒衣。春天日渐暖和，黄鹂开始鸣叫。姑娘们提着深筐，沿小路去采嫩桑叶。春日昼长人缓，采白蒿的女子密密层层。姑娘们心里悲伤，怕被公子带回家去。</p>
+<p>七月火星西沉，八月收割芦苇备蚕事。养蚕的三月里修桑条，取来斧子砍掉高扬的枝条，攀下细枝采嫩叶。七月伯劳鸟叫，八月开始纺麻绩线。染成黑红、染成黄，我染的朱红最鲜亮，都是给公子做衣裳。</p>
+<p>四月远志结籽，五月知了鸣叫。八月庄稼开镰，十月草木落叶。十一月捕貉，再猎狐狸，给公子做皮裘。十二月众人聚齐操练田猎武事。猎得的小猪归自己，大猪献给公家。</p>
+<p>五月蚱蜢摩擦双腿作响，六月纺织娘振动翅膀。七月蟋蟀在野外，八月移到屋檐下，九月到了门边，十月钻进我的床底下。堵满洞穴熏老鼠，塞好北窗、泥封门缝。唉，我的老婆孩子，就因为要过年了，才搬进这破屋子过冬。</p>
+<p>六月吃李子和野葡萄，七月煮葵菜和豆子。八月打枣，十月收稻，酿成春酒，祈求长寿。七月吃瓜，八月摘葫芦，九月捡麻籽。采苦菜当菜、砍臭椿当柴，就靠这些养活我们的农夫。</p>
+<p>九月修筑打谷场，十月把粮食收进仓。早熟晚熟的黍稷，还有谷子、麻、豆、麦。唉，我们农夫，庄稼刚收完，又要进城给公家服劳役。白天割茅草，夜里搓绳索。赶紧上屋顶把房修好，马上又要开始播种百谷了。</p>
+<p>十二月凿冰咚咚响，正月把冰搬进冰窖。二月初行早祭，献上羔羊和韭菜。九月天高霜降，十月打扫干净谷场。摆开两壶酒宴请，宰一只羔羊。大家一起登上公堂，举起犀牛角酒杯，同声祝寿：万寿无疆！</p>
+</div>
+</div>
+</section>
+
+<!-- 02 -->
+<section class="piece" id="p02">
+<div class="p-head"><span class="p-no">之二 · 诗词</span><h2>上 邪</h2><p class="p-meta">汉乐府 · 铙歌十八曲之一 ｜ 底本：逯钦立辑校《先秦汉魏晋南北朝诗》（中华书局）</p></div>
+<div class="normal-view">
+<div class="original"><p>上邪<sup class="yi">1</sup>！我欲与君相知，长命无绝衰。山无陵<sup class="yi">2</sup>，江水为竭，冬雷震震，夏雨<sup class="py">1</sup>雪，天地合，乃敢与君绝！</p></div>
+<div class="p-block"><h3>赏析</h3><p class="sh">一位女子指天为誓：要与你相亲相爱，直到五件不可能之事发生——山平、水涸、冬雷、夏雪、天地相合。全篇三十五字，前半直陈，后半五誓连环逼进，一句紧似一句，如闻其声。汉人言情之烈、之真、之不假雕饰，此篇为极致。</p></div>
+<div class="p-block"><h3>批注 · 意思</h3><ol class="yi-list">
+<li>上邪："上"指天，"邪"同"耶"，叹词——"天啊！"劈头呼天，声口先夺人。</li>
+<li>山无陵：陵=山峰；山没了峰顶即山平——五件不可能之事的第一件。</li>
+</ol></div>
+<div class="p-block"><h3>批注 · 生僻字读音</h3><ol class="py-list">
+<li><b>夏雨雪</b>（yù）：雨作动词，落下。</li>
+</ol></div>
+<button class="btn2 primary" onclick="openDuo('p02')">对照翻译 ⇄</button>
+</div>
+<div class="duo-view">
+<div class="r-bar noprint"><button onclick="backDuo('p02')">← 返回原文视图</button></div>
+<div class="duo-head"><div>原 文</div><div>译 文</div></div>
+<div class="duo-grid"></div>
+<div class="tr-data" hidden>
+<p>天啊！我要和你相亲相爱，让这份感情永不衰减。除非高山没了峰顶，江水枯竭，冬天打雷，夏天下雪，天地合在一起——到那时候，我才敢和你断绝！</p>
+</div>
+</div>
+</section>
+
+<!-- 03 -->
+<section class="piece" id="p03">
+<div class="p-head"><span class="p-no">之三 · 诗词</span><h2>行行重行行</h2><p class="p-meta">《古诗十九首》其一 · 东汉 · 无名氏 ｜ 底本：逯钦立辑校本（《文选》卷二十九）</p></div>
+<div class="normal-view">
+<div class="original">
+<p>行行重行行，与君生别离。相去万余里，各在天一涯。</p>
+<p>道路阻且长，会面安可知？胡马依北风，越鸟巢南枝。</p>
+<p>相去日已远，衣带日已缓<sup class="yi">1</sup>。浮云蔽白日<sup class="yi">2</sup>，游子不顾返。</p>
+<p>思君令人老，岁月忽已晚。弃捐勿复道，努力加餐饭<sup class="yi">3</sup>。</p>
+</div>
+<div class="p-block"><h3>赏析</h3><p class="sh">思妇之词，十六句四层：一别、二隔、三瘦、四老，层层递进。"胡马""越鸟"两句物犹如此、人何以堪；"浮云蔽白日"兼有君心难测之疑；末二句忽然撇开万语千言，只劝"努力加餐饭"——以最家常语收最沉痛情，钟嵘"惊心动魄，几乎一字千金"之评由此而来。</p></div>
+<div class="p-block"><h3>批注 · 意思</h3><ol class="yi-list">
+<li>衣带日已缓：人瘦则带松，写相思不言相思。</li>
+<li>浮云蔽白日：浮云喻谗邪或他乡新欢，白日喻游子——一句多义，最耐寻味。</li>
+<li>努力加餐饭：希望深处的自持：唯有好好吃饭、保重身体，等待才有意义。</li>
+</ol></div>
+<button class="btn2 primary" onclick="openDuo('p03')">对照翻译 ⇄</button>
+</div>
+<div class="duo-view">
+<div class="r-bar noprint"><button onclick="backDuo('p03')">← 返回原文视图</button></div>
+<div class="duo-head"><div>原 文</div><div>译 文</div></div>
+<div class="duo-grid"></div>
+<div class="tr-data" hidden>
+<p>你走啊走啊不停地走，就这样与我们活生生地分离。彼此相隔一万多里，各自在天的一方。</p>
+<p>道路艰险又漫长，哪还能指望有相会之日？北方的马依恋着北风，南方的鸟筑巢还选向南的枝条。</p>
+<p>分离的日子一天比一天久，我的衣带也一天比一天松。浮云遮住了太阳，远行的人啊，竟不想着回来。</p>
+<p>想念你使我迅速衰老，转眼一年又快到头了。这些话丢开不说也罢，只愿你多吃饭、好好保重。</p>
+</div>
+</div>
+</section>
+
+<!-- 04 -->
+<section class="piece" id="p04">
+<div class="p-head"><span class="p-no">之四 · 诗词</span><h2>燕歌行</h2><p class="p-meta">三国魏 · 曹丕 ｜ 底本：逯钦立辑校本（《文选》卷二十七）</p></div>
+<div class="normal-view">
+<div class="original"><p>秋风萧瑟天气凉，草木摇落露为霜。群燕辞归鹄<sup class="py">1</sup>南翔，念君客游思断肠。慊慊<sup class="py">2</sup>思归恋故乡，君何淹留寄他方？贱妾茕茕<sup class="py">3</sup>守空房，忧来思君不敢忘，不觉泪下沾衣裳。援琴鸣弦发清商<sup class="yi">1</sup>，短歌微吟不能长。明月皎皎照我床，星汉西流夜未央。牵牛织女遥相望，尔独何辜限河梁？</p></div>
+<div class="p-block"><h3>赏析</h3><p class="sh">现存最早的完整七言诗，十五句一韵到底。思妇在秋风里由景入情：想他也在想家，又问"君何淹留"——体贴与怨望交织。琴声短吟、明月满床、牛女隔河，声色步步收束到"不能长"三字，连歌都唱不长，情之郁结可知。王夫之评为"倾情倾度，倾色倾声，古今无两"。</p></div>
+<div class="p-block"><h3>批注 · 意思</h3><ol class="yi-list">
+<li>清商：乐调名，声调短促清婉，故曰"短歌微吟不能长"。</li>
+</ol></div>
+<div class="p-block"><h3>批注 · 生僻字读音</h3><ol class="py-list">
+<li><b>鹄</b>（hú）：天鹅。</li>
+<li><b>慊慊</b>（qiàn qiàn）：心不满足、怅然若失的样子。</li>
+<li><b>茕茕</b>（qióng qióng）：孤独无依的样子。</li>
+</ol></div>
+<button class="btn2 primary" onclick="openDuo('p04')">对照翻译 ⇄</button>
+</div>
+<div class="duo-view">
+<div class="r-bar noprint"><button onclick="backDuo('p04')">← 返回原文视图</button></div>
+<div class="duo-head"><div>原 文</div><div>译 文</div></div>
+<div class="duo-grid"></div>
+<div class="tr-data" hidden>
+<p>秋风吹得萧瑟，天气转凉，草木凋零，白露结成了霜。燕子天鹅都辞别北方飞往南方，想起你独自在外漂泊，我思念得肝肠寸断。你心里也一定怅然若失、思念故乡吧，那为什么还滞留在外地不回来？我孤孤单单守着空房，忧愁袭来时想你，一刻不敢忘，不知不觉眼泪沾湿了衣裳。取琴来弹，弦声发出清商曲调，短促低吟，怎么也唱不长久。皎洁的月光照着我的床，银河已转向西，夜却还深长。牛郎织女隔着天河遥遥相望，你们又有什么罪过，被这道河梁永远隔开？</p>
+</div>
+</div>
+</section>
+
+<!-- 05 -->
+<section class="piece" id="p05">
+<div class="p-head"><span class="p-no">之五 · 诗词</span><h2>咏怀 · 其一</h2><p class="p-meta">三国魏 · 阮籍 ｜ 底本：逯钦立辑校本，李善注《文选》卷二十三</p></div>
+<div class="normal-view">
+<div class="original"><p>夜中不能寐，起坐弹鸣琴。薄帷<sup class="yi">1</sup>鉴<sup class="yi">2</sup>明月，清风吹我襟。孤鸿号外野，翔鸟鸣北林。徘徊将何见？忧思独伤心。</p></div>
+<div class="p-block"><h3>赏析</h3><p class="sh">八十二首《咏怀》的定调之作。不眠—弹琴—见月闻风—闻鸿听鸟，全是夜的声光；末句"徘徊将何见"自问自答：什么也看不见，只有一颗忧思的独自伤心。司马氏当国、名士少有全者，阮籍以"言在耳目之内，情寄八荒之表"的写法把时代恐怖化入夜色，开后世咏怀组诗之体。</p></div>
+<div class="p-block"><h3>批注 · 意思</h3><ol class="yi-list">
+<li>薄帷：薄薄的帐幔。</li>
+<li>鉴：映照——薄帐如镜映着月色，"鉴"字使月可感可触。</li>
+</ol></div>
+<button class="btn2 primary" onclick="openDuo('p05')">对照翻译 ⇄</button>
+</div>
+<div class="duo-view">
+<div class="r-bar noprint"><button onclick="backDuo('p05')">← 返回原文视图</button></div>
+<div class="duo-head"><div>原 文</div><div>译 文</div></div>
+<div class="duo-grid"></div>
+<div class="tr-data" hidden>
+<p>半夜里睡不着，起来坐着弹琴。薄薄的帐幔映着明月，清风吹动我的衣襟。失群的大雁在旷野哀号，盘旋的鸟在北面林中悲鸣。这样徘徊着能看到什么呢？只有满怀忧思，独自伤心。</p>
+</div>
+</div>
+</section>
+
+<!-- 06 -->
+<section class="piece" id="p06">
+<div class="p-head"><span class="p-no">之六 · 诗词</span><h2>咏史 · 其二</h2><p class="p-meta">西晋 · 左思 ｜ 底本：逯钦立辑校本（《文选》卷二十一）</p></div>
+<div class="normal-view">
+<div class="original">
+<p>郁郁涧底松，离离山上苗。以彼径寸茎，荫此百尺条。</p>
+<p>世胄蹑高位，英俊沉下僚<sup class="yi">1</sup>。地势使之然，由来非一朝。</p>
+<p>金张藉<sup class="yi">2</sup>旧业，七叶珥<sup class="py">1</sup>汉貂<sup class="yi">3</sup>。冯公岂不伟，白首不见招。</p>
+</div>
+<div class="p-block"><h3>赏析</h3><p class="sh">涧底之松百尺高材，却让山上寸径之苗遮荫——起笔一个比喻便把门阀社会倒挂的秩序画尽。"世胄蹑高位"四句由喻入题，再引金日磾、张汤七代贵宦与冯唐白首郎官作史证，喻、论、史三段咬合，无一句松懈。咏史诗从此不再咏古人事，而借古人浇自己块垒。</p></div>
+<div class="p-block"><h3>批注 · 意思</h3><ol class="yi-list">
+<li>世胄蹑高位，英俊沉下僚：全篇之骨——世家子弟踏着高位，英才沉沦于下层小吏。</li>
+<li>金张藉旧业：金日磾、张汤家族凭祖先世业七代显贵。</li>
+<li>七叶珥汉貂：七叶=七世；珥=插；汉貂=冠旁插貂尾——七代高官的具象。</li>
+</ol></div>
+<div class="p-block"><h3>批注 · 生僻字读音</h3><ol class="py-list">
+<li><b>珥</b>（ěr）：插、戴。</li>
+</ol></div>
+<button class="btn2 primary" onclick="openDuo('p06')">对照翻译 ⇄</button>
+</div>
+<div class="duo-view">
+<div class="r-bar noprint"><button onclick="backDuo('p06')">← 返回原文视图</button></div>
+<div class="duo-head"><div>原 文</div><div>译 文</div></div>
+<div class="duo-grid"></div>
+<div class="tr-data" hidden>
+<p>茂密的青松长在涧底，纤弱的小苗高踞山头。凭它那直径一寸的茎干，竟遮住了百尺高松的枝条。</p>
+<p>世家子弟登上高位，才俊之士沉沦在低级官职里。是地势造成了这般情形，这情形由来已久，不是一朝一夕了。</p>
+<p>金家张家靠着祖先的功业，七代做汉朝高官、帽插貂尾。冯唐难道不伟大？可他头发白了也没被朝廷征召重用。</p>
+</div>
+</div>
+</section>
+
+<!-- 07 -->
+<section class="piece" id="p07">
+<div class="p-head"><span class="p-no">之七 · 诗词</span><h2>读山海经 · 其十</h2><p class="p-meta">东晋 · 陶渊明 ｜ 底本：袁行霈《陶渊明集笺注》（中华书局）</p></div>
+<div class="normal-view">
+<div class="original"><p>精卫衔微木，将以填沧海。刑天舞干戚<sup class="yi">1</sup>，猛志固常在。同物既无虑<sup class="yi">2</sup>，化去不复悔。徒设在昔心，良辰讵<sup class="yi">3</sup>可待！</p></div>
+<div class="p-block"><h3>赏析</h3><p class="sh">教材里的陶渊明是"采菊东篱"的静穆，此篇是鲁迅指出的另一面——"金刚怒目"。精卫填海、刑天抗天，两个神话都失败而其志不灭；末联陡然一转：当年之心徒然设下，好时候却哪里等得到——咏神话实自伤，静穆外壳下的不平之气尽出。一静一烈，方是完整的陶渊明。</p></div>
+<div class="p-block"><h3>批注 · 意思</h3><ol class="yi-list">
+<li>刑天舞干戚：刑天与帝争神被断首，以乳为目、以脐为口，操干（盾）戚（斧）而舞——败而不屈。</li>
+<li>同物既无虑：（女娃）既已成为异物（鸟），便无所顾虑。</li>
+<li>讵：岂、哪里。</li>
+</ol></div>
+<button class="btn2 primary" onclick="openDuo('p07')">对照翻译 ⇄</button>
+</div>
+<div class="duo-view">
+<div class="r-bar noprint"><button onclick="backDuo('p07')">← 返回原文视图</button></div>
+<div class="duo-head"><div>原 文</div><div>译 文</div></div>
+<div class="duo-grid"></div>
+<div class="tr-data" hidden>
+<p>精卫鸟衔着细小的树枝，想去填平茫茫大海。刑天挥舞着盾和大斧，勇猛的意志始终长存。既然身死化为异物就无所顾虑，化作他物也决不后悔。只可惜空怀着当年的壮心，施展的好时光又哪里等得到呢！</p>
+</div>
+</div>
+</section>
+
+<!-- 08 -->
+<section class="piece" id="p08">
+<div class="p-head"><span class="p-no">之八 · 诗词</span><h2>代悲白头翁</h2><p class="p-meta">唐 · 刘希夷 ｜ 底本：《全唐诗》卷八十二，参《文苑英华》</p></div>
+<div class="normal-view">
+<div class="original">
+<p>洛阳城东桃李花，飞来飞去落谁家？洛阳女儿惜颜色，坐见<sup class="yi">1</sup>落花长叹息。</p>
+<p>今年花落颜色改，明年花开复谁在？已见松柏摧为薪，更闻桑田变成海。</p>
+<p>古人无复洛城东，今人还对落花风。年年岁岁花相似，岁岁年年人不同<sup class="yi">2</sup>。</p>
+<p>寄言全盛红颜子，应怜半死白头翁。此翁白头真可怜，伊昔<sup class="yi">3</sup>红颜美少年。</p>
+<p>公子王孙芳树下，清歌妙舞落花前。光禄池台文锦绣，将军楼阁画神仙。</p>
+<p>一朝卧病无相识，三春行乐在谁边？宛转蛾眉能几时？须臾鹤发乱如丝。</p>
+<p>但看古来歌舞地，惟有黄昏鸟雀悲。</p>
+</div>
+<div class="p-block"><h3>赏析</h3><p class="sh">初唐七言歌行的生命哲思名篇。由洛阳女儿对落花起兴，翻出"年年岁岁花相似，岁岁年年人不同"的千古之问，再借一个白头翁的今昔——昔日红颜美少年、公子王孙歌舞之地，今惟黄昏鸟雀——把盛衰写成一整条时间之流。感伤而不颓唐，为张若虚《春江花月夜》之先声。相传舅父宋之问欲夺此诗名句而不得，竟以土囊压杀之，两句诗的分量可想而知。</p></div>
+<div class="p-block"><h3>批注 · 意思</h3><ol class="yi-list">
+<li>坐见：坐=因而、正对着。</li>
+<li>年年岁岁花相似，岁岁年年人不同：全篇之眼；相传为此两句招祸（见《大唐新语》《刘宾客嘉话录》）。</li>
+<li>伊昔：伊=发语词；往昔、当年。</li>
+</ol></div>
+<button class="btn2 primary" onclick="openDuo('p08')">对照翻译 ⇄</button>
+</div>
+<div class="duo-view">
+<div class="r-bar noprint"><button onclick="backDuo('p08')">← 返回原文视图</button></div>
+<div class="duo-head"><div>原 文</div><div>译 文</div></div>
+<div class="duo-grid"></div>
+<div class="tr-data" hidden>
+<p>洛阳城东的桃李花开，飞来飞去会落进谁家？洛阳女儿爱惜自己的容颜，眼看着落花长久叹息。</p>
+<p>今年花谢人也变了模样，明年花开时还有谁在？已经见过苍松翠柏被砍作柴薪，又听说桑田变成了大海。</p>
+<p>古人再不会在洛阳城东出现，今人却还对着一阵落花之风。年年岁岁花开得一样，岁岁年年看花的人却不同了。</p>
+<p>捎句话给正当盛年的红颜少年：应该怜悯那半死不活的白头老翁。这老翁白头潦倒真可怜，想当年他也是风流俊美的少年。</p>
+<p>那时他在芳树下与公子王孙游宴，在落花前听清歌看妙舞。光禄大夫家的池台装饰着锦绣纹饰，将军的楼阁里画着神仙。</p>
+<p>一朝卧病在床无人相识，春天的行乐又到了谁家那边？婉转的蛾眉青春能有多久？转眼白发就乱得像乱丝。</p>
+<p>且看古来歌舞繁华之地，如今只剩黄昏里鸟雀的悲鸣。</p>
+</div>
+</div>
+</section>
+
+<!-- 09 -->
+<section class="piece" id="p09">
+<div class="p-head"><span class="p-no">之九 · 诗词</span><h2>感遇 · 其一</h2><p class="p-meta">唐 · 张九龄 ｜ 底本：《全唐诗》卷四十七；《唐诗三百首》开卷第一首</p></div>
+<div class="normal-view">
+<div class="original"><p>兰叶春葳蕤<sup class="py">1</sup>，桂华秋皎洁。欣欣此生意，自尔为佳节。谁知林栖者，闻风坐<sup class="yi">1</sup>相悦。草木有本心<sup class="yi">2</sup>，何求美人折！</p></div>
+<div class="p-block"><h3>赏析</h3><p class="sh">兰逢春而葳蕤、桂值秋而皎洁，各自成全各自的季节——草木开花不为求人折取，自有其"本心"。张九龄由宰相罢政后贬荆州，作《感遇》十二首，此篇居首，比兴君子立身：不求闻达而风致自远。"何求美人折"一问，把《离骚》以来的香草传统翻转出新的骨气。《唐诗三百首》以之开卷，是选家对"唐音品格"的定义。</p></div>
+<div class="p-block"><h3>批注 · 意思</h3><ol class="yi-list">
+<li>坐相悦：坐=因而；因闻其风而相悦。</li>
+<li>本心：天性自芳——"美人"用《离骚》典，反用其意：不求君王采撷而自葆其芳。</li>
+</ol></div>
+<div class="p-block"><h3>批注 · 生僻字读音</h3><ol class="py-list">
+<li><b>葳蕤</b>（wēi ruí）：草木枝叶繁盛下垂的样子。</li>
+</ol></div>
+<button class="btn2 primary" onclick="openDuo('p09')">对照翻译 ⇄</button>
+</div>
+<div class="duo-view">
+<div class="r-bar noprint"><button onclick="backDuo('p09')">← 返回原文视图</button></div>
+<div class="duo-head"><div>原 文</div><div>译 文</div></div>
+<div class="duo-grid"></div>
+<div class="tr-data" hidden>
+<p>兰草的叶子在春天繁茂，桂花在秋天皎洁。它们欣欣然自有一片生机，自然而然成就了各自的美好时节。谁想到山林隐居的人，闻到芬芳便心生爱悦。草木开花自有本性，哪里是为求美人攀折呢！</p>
+</div>
+</div>
+</section>
+
+<!-- 10 -->
+<section class="piece" id="p10">
+<div class="p-head"><span class="p-no">之十 · 诗词</span><h2>终南山</h2><p class="p-meta">唐 · 王维 ｜ 底本：《全唐诗》卷一二六；参赵殿成《王右丞集笺注》</p></div>
+<div class="normal-view">
+<div class="original"><p>太乙<sup class="yi">1</sup>近天都，连山接海隅。白云回望合，青霭<sup class="py">1</sup>入看无。分野<sup class="yi">2</sup>中峰变，阴晴众壑<sup class="py">2</sup>殊。欲投人处宿，隔水问樵夫。</p></div>
+<div class="p-block"><h3>赏析</h3><p class="sh">四十个字写尽一座八百里秦岭。首联自远望取其大势，颔联"白云回望合，青霭入看无"写山之虚实——回头云合、近前岚散，是唯有身入深山者才写得出的经验；颈联以分野、阴晴写其广大；尾联忽以"隔水问樵夫"一个凡人小动作收束万仞高山，人小山大，余味无穷。清人评"四十字中无一字可移他山"。</p></div>
+<div class="p-block"><h3>批注 · 意思</h3><ol class="yi-list">
+<li>太乙：终南山主峰名，亦代指终南山。</li>
+<li>分野中峰变：古人以二十八宿配地上州域称"分野"；一峰之隔分野即变，极言其广。</li>
+</ol></div>
+<div class="p-block"><h3>批注 · 生僻字读音</h3><ol class="py-list">
+<li><b>霭</b>（ǎi）：云气、雾气。</li>
+<li><b>壑</b>（hè）：山谷、沟壑。</li>
+</ol></div>
+<button class="btn2 primary" onclick="openDuo('p10')">对照翻译 ⇄</button>
+</div>
+<div class="duo-view">
+<div class="r-bar noprint"><button onclick="backDuo('p10')">← 返回原文视图</button></div>
+<div class="duo-head"><div>原 文</div><div>译 文</div></div>
+<div class="duo-grid"></div>
+<div class="tr-data" hidden>
+<p>终南山高得快要挨着天帝的都城，山连着山一直延伸到海边。回头望去白云已合拢成一片，走近了看，青色的雾岚却又不见踪影。以主峰为界，天上的分野就变了；千沟万壑，阴晴各不相同。想找户人家投宿，隔着溪水大声问那打柴的樵夫。</p>
+</div>
+</div>
+</section>
+
+<!-- 11 -->
+<section class="piece" id="p11">
+<div class="p-head"><span class="p-no">之十一 · 诗词</span><h2>月下独酌 · 其一</h2><p class="p-meta">唐 · 李白 ｜ 底本：《李太白全集》（中华书局点校本，王琦注）</p></div>
+<div class="normal-view">
+<div class="original">
+<p>花间一壶酒，独酌无相亲。举杯邀明月，对影成三人。</p>
+<p>月既不解<sup class="yi">1</sup>饮，影徒随我身。暂伴月将<sup class="yi">2</sup>影，行乐须及春。</p>
+<p>我歌月徘徊，我舞影零乱。醒时同交欢，醉后各分散。</p>
+<p>永结无情游<sup class="yi">3</sup>，相期邈<sup class="py">1</sup>云汉。</p>
+</div>
+<div class="p-block"><h3>赏析</h3><p class="sh">孤独被李白写成了一场热闹：无相亲者，便邀月与影凑成"三人"；月不懂喝酒、影只徒然随身，偏说"暂伴"——明知是空热闹而热热闹闹地演到底，歌之舞之，直至醉后各自散场，再约天上银河重见。以"无情游"三字点破：与无情之物结游，正因人间有情处无人共。热闹之至而孤独之至，沈德潜谓"脱口而出，纯乎天籁"。</p></div>
+<div class="p-block"><h3>批注 · 意思</h3><ol class="yi-list">
+<li>不解：不懂饮酒之趣。</li>
+<li>月将影：将=与、同；暂且同月亮和影子作伴。</li>
+<li>无情游：与无情之物（月、影）的交游，超越尘世情累。</li>
+</ol></div>
+<div class="p-block"><h3>批注 · 生僻字读音</h3><ol class="py-list">
+<li><b>邈</b>（miǎo）：遥远。</li>
+</ol></div>
+<button class="btn2 primary" onclick="openDuo('p11')">对照翻译 ⇄</button>
+</div>
+<div class="duo-view">
+<div class="r-bar noprint"><button onclick="backDuo('p11')">← 返回原文视图</button></div>
+<div class="duo-head"><div>原 文</div><div>译 文</div></div>
+<div class="duo-grid"></div>
+<div class="tr-data" hidden>
+<p>花丛中摆一壶酒，自斟自饮没有亲友相伴。举起酒杯邀请明月，对着身影便凑成了三个人。</p>
+<p>月亮既然不懂得喝酒，影子也只是白白跟随着我。姑且同月亮和影子作伴，趁这大好春光及时行乐。</p>
+<p>我唱歌时月亮徘徊不去，我起舞时影子随之零乱。清醒时我们一同欢聚，醉了以后便各自散去。</p>
+<p>愿同你们结成忘却世情的交游，相约在遥远的银河再见。</p>
+</div>
+</div>
+</section>
+
+<!-- 12 -->
+<section class="piece" id="p12">
+<div class="p-head"><span class="p-no">之十二 · 诗词</span><h2>赠卫八处士</h2><p class="p-meta">唐 · 杜甫 ｜ 底本：《杜诗详注》（仇兆鳌，中华书局）；"问答乃未已"一作"未及已"</p></div>
+<div class="normal-view">
+<div class="original">
+<p>人生不相见，动如参与商<sup class="py">1</sup><sup class="yi">1</sup>。今夕复何夕，共此灯烛光。</p>
+<p>少壮能几时，鬓发各已苍。访旧半为鬼，惊呼热中肠。</p>
+<p>焉知二十载，重上君子堂。昔别君未婚，儿女忽成行。</p>
+<p>怡然敬父执<sup class="yi">2</sup>，问我来何方。问答乃未已，驱儿罗酒浆。</p>
+<p>夜雨剪春韭，新炊间<sup class="yi">3</sup>黄粱。主称会面难，一举累十觞<sup class="py">2</sup>。</p>
+<p>十觞亦不醉，感子故意<sup class="yi">4</sup>长。明日隔山岳，世事两茫茫。</p>
+</div>
+<div class="p-block"><h3>赏析</h3><p class="sh">安史之乱中与旧友一夕重逢之作。从参商二星的天上写到灯烛光的屋里，从"访旧半为鬼"的死讯写到儿女罗酒浆的生机，夜雨剪韭、新炊黄粱，最平常的饭菜在最不平常的年月里成为盛宴。"明日隔山岳，世事两茫茫"收束——今夕愈暖，明日愈茫。乱世人情，一夕之聚写透。</p></div>
+<div class="p-block"><h3>批注 · 意思</h3><ol class="yi-list">
+<li>动如参与商：参宿在西、商宿（心宿）在东，此出彼没永不相见——人生离散的星空比喻。</li>
+<li>父执：父亲的朋友。</li>
+<li>间黄粱：间=掺杂；新米饭里掺着黄米。</li>
+<li>故意长：故人的情意深长。</li>
+</ol></div>
+<div class="p-block"><h3>批注 · 生僻字读音</h3><ol class="py-list">
+<li><b>参</b>（shēn）商：参宿的"参"读 shēn。</li>
+<li><b>觞</b>（shāng）：酒杯。</li>
+</ol></div>
+<button class="btn2 primary" onclick="openDuo('p12')">对照翻译 ⇄</button>
+</div>
+<div class="duo-view">
+<div class="r-bar noprint"><button onclick="backDuo('p12')">← 返回原文视图</button></div>
+<div class="duo-head"><div>原 文</div><div>译 文</div></div>
+<div class="duo-grid"></div>
+<div class="tr-data" hidden>
+<p>人生中朋友难得相见，就像参星与商星，此起彼落。今晚是什么样的夜晚，竟能同在这烛光下相聚。</p>
+<p>青春年壮能有多少时候？如今你我鬓发都已花白。打听旧友，一半已经死去，让人惊呼失声、心头滚烫。</p>
+<p>谁能想到过了二十年，还能重新踏进你家厅堂。当年分别时你还没成婚，如今儿女忽然排成了行。</p>
+<p>他们高高兴兴地敬重父亲的老友，问我是从哪里来的。问答还没说完，你就催着孩子摆设酒菜。</p>
+<p>夜里冒雨剪来春韭，新煮的饭里掺着黄米，喷喷香。主人说见一面太难，一口气连干了十杯。</p>
+<p>连饮十杯也不觉得醉，只感念你故人情意深长。明天又要被山岳隔开，人世事，你我都一样茫茫难料。</p>
+</div>
+</div>
+</section>
+
+<!-- 13 秋兴八首 -->
+<section class="piece" id="p13">
+<div class="p-head"><span class="p-no">之十三 · 诗词（组诗全收）</span><h2>秋兴八首</h2><p class="p-meta">唐 · 杜甫（大历元年，766，夔州）｜ 底本：《杜诗详注》（仇兆鳌，中华书局）</p></div>
+<div class="normal-view">
+<div class="original">
+<p><b>其一</b>　玉露凋伤枫树林，巫山巫峡气萧森。江间波浪兼天涌，塞上风云接地阴。丛菊两开他日泪，孤舟一系故园心。寒衣处处催刀尺，白帝城高急暮砧<sup class="py">1</sup>。</p>
+<p><b>其二</b>　夔府<sup class="py">2</sup>孤城落日斜，每依北斗望京华。听猿实下三声泪，奉使虚随八月槎<sup class="py">3</sup>。画省香炉违伏枕，山楼粉堞<sup class="py">4</sup>隐悲笳<sup class="py">5</sup>。请看石上藤萝月，已映洲前芦荻花。</p>
+<p><b>其三</b>　千家山郭静朝晖，日日江楼坐翠微。信宿渔人还泛泛，清秋燕子故飞飞。匡衡抗疏功名薄，刘向传经心事违。同学少年多不贱，五陵衣马自轻肥。</p>
+<p><b>其四</b>　闻道长安似弈棋，百年世事不胜悲。王侯第宅皆新主，文武衣冠异昔时。直北关山金鼓振，征西车马羽书驰。鱼龙寂寞秋江冷，故国平居有所思。</p>
+<p><b>其五</b>　蓬莱宫阙对南山，承露金茎霄汉间。西望瑶池降王母，东来紫气满函关。云移雉<sup class="py">6</sup>尾开宫扇，日绕龙鳞识圣颜。一卧沧江惊岁晚，几回青琐点朝班。</p>
+<p><b>其六</b>　瞿塘峡口曲江头，万里风烟接素秋。花萼<sup class="py">7</sup>夹城通御气，芙蓉小苑入边愁。珠帘绣柱围黄鹄，锦缆牙樯起白鸥。回首可怜歌舞地，秦中自古帝王州。</p>
+<p><b>其七</b>　昆明池水汉时功，武帝旌旗在眼中。织女机丝虚夜月，石鲸鳞甲动秋风。波漂菰<sup class="py">8</sup>米沉云黑，露冷莲房坠粉红。关塞极天惟鸟道，江湖满地一渔翁。</p>
+<p><b>其八</b>　昆吾御宿自逶迤，紫阁峰阴入渼陂<sup class="py">9</sup>。香稻啄馀鹦鹉粒<sup class="yi">1</sup>，碧梧栖老凤凰枝。佳人拾翠春相问，仙侣同舟晚更移。彩笔昔曾干气象，白头吟望苦低垂。</p>
+</div>
+<div class="p-block"><h3>赏析</h3><p class="sh">杜甫七律的巅峰组诗：身在夔州，心系长安，八首以巫峡秋气起，以长安旧事回环往复——孤舟故园、北斗京华、弈棋朝局、蓬莱宫阙、曲江歌舞、昆明池水、渼陂春游，一头是衰年的江上，一头是不再的帝京，两京之间拉出全部的乡愁与家国痛。章法钩连、句法逆挽、声律细入毫芒，叶嘉莹集历代评点证其为七律艺术之极致。"晚节渐于诗律细"，此八首是铁证。</p></div>
+<div class="p-block"><h3>批注 · 意思</h3><ol class="yi-list">
+<li>香稻啄馀鹦鹉粒：句法倒装（鹦鹉啄馀之香稻粒），为突出"香稻""碧梧"，拗峭而意丰——杜诗"语不惊人死不休"之验。</li>
+</ol></div>
+<div class="p-block"><h3>批注 · 生僻字读音</h3><ol class="py-list">
+<li><b>砧</b>（zhēn）：捣衣石，此指捣衣声。</li>
+<li><b>夔府</b>（kuí fǔ）：夔州，今重庆奉节。</li>
+<li><b>槎</b>（chá）：木筏；八月槎用乘槎上天河的传说。</li>
+<li><b>堞</b>（dié）：城上齿状的矮墙。</li>
+<li><b>笳</b>（jiā）：胡笳，边地军中乐器。</li>
+<li><b>雉</b>（zhì）：野鸡；雉尾扇为宫廷仪仗。</li>
+<li><b>花萼</b>（è）：花萼楼，唐玄宗长安兴庆宫中名楼。</li>
+<li><b>菰</b>（gū）：茭白，秋季结实为菰米。</li>
+<li><b>渼陂</b>（měi bēi）：长安附近名胜湖泽。</li>
+</ol></div>
+<button class="btn2 primary" onclick="openDuo('p13')">对照翻译 ⇄</button>
+</div>
+<div class="duo-view">
+<div class="r-bar noprint"><button onclick="backDuo('p13')">← 返回原文视图</button></div>
+<div class="duo-head"><div>原 文</div><div>译 文</div></div>
+<div class="duo-grid"></div>
+<div class="tr-data" hidden>
+<p>【其一】白露凋伤了枫树林，巫山巫峡一派萧瑟阴森。江上波浪汹涌连天，塞上风云低垂接地，一片阴沉。菊花两度开放，开时都让我落泪；孤舟系在岸边，也系着我思念故园的心。家家都在赶着裁剪寒衣，高高的白帝城上，暮色里捣衣声一阵急过一阵。</p>
+<p>【其二】夔州孤城里落日西斜，我夜夜依着北斗的方向遥望长安。听猿声三声，眼泪实实在在落下；当年奉命出京，却像乘八月槎一样落了空。尚书省的香炉早与我这卧病之人无缘，山城敌楼的粉墙后隐约传来悲凉的胡笳。且看石上藤萝间的月色，已经映照到洲前雪白的芦荻花上。</p>
+<p>【其三】千家山城沐浴在安静的晨光里，我天天坐在江楼，面对青翠山色。连宿两夜的渔人还在江上漂荡，清秋的燕子偏偏飞来飞去。匡衡直言上书而成名，我的功名却那样微薄；刘向传经于朝廷，我的心愿却偏偏违逆。当年的同学少年如今大多显贵，在五陵一带轻裘肥马，自得意满。</p>
+<p>【其四】听说长安的政局像下棋一样翻覆不定，百年的世事想起来让人悲不胜悲。王侯的宅第都换了新主人，文武百官的衣冠也不再是从前那些人。正北面关山间战鼓震天，西征的车马飞驰，军情文书急如星火。鱼龙在清冷的秋江里寂寞潜藏，想起往日在故国长安的平居岁月，不胜思念。</p>
+<p>【其五】蓬莱宫正对着终南山，承露盘的金柱高耸入云。西望是王母娘娘降临的瑶池，东望是紫气充满函谷关。宫扇像云一样移开，见到皇帝如日在龙鳞之上，我得以亲睹圣颜。如今一病卧在沧江之上，惊觉岁月已晚；当年在宫门青琐殿前应名点班的情景，如今只能几回梦中重历。</p>
+<p>【其六】瞿塘峡口与曲江池畔，万里风烟在素秋里遥遥相接。当年花萼楼夹城复道畅通着天子车驾，如今芙蓉苑里传来的却是边境的忧愁。珠帘绣柱间只有黄鹄盘旋，锦缆牙樯惊起一群白鸥。回首那可怜的歌舞繁华之地，关中自古就是帝王的州府啊。</p>
+<p>【其七】昆明池开凿于汉武帝时的功业，武帝的旌旗仿佛还在眼前。池边织女的石像空对着夜月（织机丝线一无所成），石雕的鲸鱼鳞甲在秋风里似有波动。菰米的黑影漂浮在波上如沉云，冷露里莲蓬坠下粉红的花瓣。关塞高耸接天只有鸟儿能飞的道路，而我如一个渔翁，漂泊在这满地的江湖。</p>
+<p>【其八】当年昆吾、御宿一带道路蜿蜒，紫阁峰的倒影映入渼陂湖。那是鹦鹉啄剩的香稻米粒，是凤凰栖老过的碧绿梧桐。佳人春天里拾翠羽互相问候，仙侣同舟游赏，天晚了还在移船换景。当年我这支彩笔曾上干气象、震动朝野，如今白头吟望，只能苦涩地低垂着头。</p>
+</div>
+</div>
+</section>
+
+<!-- 14 -->
+<section class="piece" id="p14">
+<div class="p-head"><span class="p-no">之十四 · 诗词</span><h2>山 石</h2><p class="p-meta">唐 · 韩愈 ｜ 底本：《昌黎先生集》卷五（上海古籍点校本）</p></div>
+<div class="normal-view">
+<div class="original">
+<p>山石荦确<sup class="py">1</sup>行径微，黄昏到寺蝙蝠飞。升堂坐阶新雨足，芭蕉叶大栀子肥<sup class="yi">1</sup>。</p>
+<p>僧言古壁佛画好，以火来照所见稀。铺床拂席置羹饭，疏粝<sup class="py">2</sup>亦足饱我饥。</p>
+<p>夜深静卧百虫绝，清月出岭光入扉。天明独去无道路，出入高下穷烟霏。</p>
+<p>山红涧碧纷烂漫，时见松枥<sup class="py">3</sup>皆十围。当流赤足踏涧石，水声激激风吹衣。</p>
+<p>人生如此自可乐，岂必局束为人鞿<sup class="py">4</sup><sup class="yi">2</sup>？嗟哉吾党二三子，安得至老不更归。</p>
+</div>
+<div class="p-block"><h3>赏析</h3><p class="sh">一次寺中夜宿的完整游记：黄昏到寺、蝙蝠乱飞、看壁画、吃糙饭、夜听虫绝月出、天明下山、赤足踏涧——以文为诗，句句如散句白描而气脉不断。"芭蕉叶大栀子肥"炼一"肥"字，雨后草木的饱满扑面而来；"水声激激风吹衣"，自在之乐写到极处，才敢发"岂必局束为人鞿"的牢骚。韩愈"奇崛"诗风的最可亲的一面。</p></div>
+<div class="p-block"><h3>批注 · 意思</h3><ol class="yi-list">
+<li>栀子肥：雨后栀子饱满欲滴——一个"肥"字见炼字功夫。</li>
+<li>为人鞿：鞿=马络头；被人像套马一样束缚着——全篇自由之乐所反衬的对象。</li>
+</ol></div>
+<div class="p-block"><h3>批注 · 生僻字读音</h3><ol class="py-list">
+<li><b>荦确</b>（luò què）：石头嶙峋不平的样子。</li>
+<li><b>疏粝</b>（lì）：粗糙的饭食。</li>
+<li><b>枥</b>（lì）：同"栎"，栎树。</li>
+<li><b>鞿</b>（jī）：马笼头。</li>
+</ol></div>
+<button class="btn2 primary" onclick="openDuo('p14')">对照翻译 ⇄</button>
+</div>
+<div class="duo-view">
+<div class="r-bar noprint"><button onclick="backDuo('p14')">← 返回原文视图</button></div>
+<div class="duo-head"><div>原 文</div><div>译 文</div></div>
+<div class="duo-grid"></div>
+<div class="tr-data" hidden>
+<p>山石嶙峋，小路又窄又细，黄昏时分来到寺里，只见蝙蝠乱飞。登上堂去，坐在台阶上，新雨下得充足，芭蕉叶子大，栀子花开得饱满。</p>
+<p>和尚说古壁上的佛画好，点上火把来照，隐约可见，看不真切。和尚铺床拂席、端上饭菜，粗茶淡饭也足够填饱我的肚子。</p>
+<p>夜深静卧，百虫都停止了鸣叫，清亮的月亮出了山岭，月光照进门来。天亮独自出发，认不清道路，在雾气中或出或进、或高或低地摸索前行。</p>
+<p>山花红、涧水碧，缤纷烂漫，时时见到松树枥树都有十围粗。遇到溪流就赤脚踏着涧中石头走过，水声激激，山风吹着衣裳。</p>
+<p>人生像这样就自有可乐之处，何必受拘束，像马一样被人套上笼头？唉，我的那几个同道伙伴啊，怎么能到老都不回到这山水间来呢？</p>
+</div>
+</div>
+</section>
+
+<!-- 15 -->
+<section class="piece" id="p15">
+<div class="p-head"><span class="p-no">之十五 · 诗词</span><h2>西塞山怀古</h2><p class="p-meta">唐 · 刘禹锡 ｜ 底本：《刘禹锡集》（中华书局点校本）</p></div>
+<div class="normal-view">
+<div class="original"><p>王濬<sup class="py">1</sup>楼船下益州，金陵王气黯然收。千寻铁锁沉江底，一片降幡<sup class="py">2</sup>出石头。人世几回伤往事，山形依旧枕寒流。今逢四海为家<sup class="yi">1</sup>日，故垒萧萧芦荻秋。</p></div>
+<div class="p-block"><h3>赏析</h3><p class="sh">前四句一件事：王濬水军顺流而下，金陵王气黯然而收，铁锁沉江、降幡出城——东吴之亡写得雷奔电掣。后四句荡开："人世几回伤往事，山形依旧枕寒流"，兴亡无数而山川不动；末联落到眼前的故垒芦荻，冷冷一收。时刘禹锡与元稹、韦楚客同赋金陵怀古，刘诗先成，白居易叹"四人探骊龙，子先获珠"，遂辍笔。</p></div>
+<div class="p-block"><h3>批注 · 意思</h3><ol class="yi-list">
+<li>四海为家：语出《史记》"天子以四海为家"，今含唐一统、险不足恃之意。</li>
+</ol></div>
+<div class="p-block"><h3>批注 · 生僻字读音</h3><ol class="py-list">
+<li><b>濬</b>（jùn）：王濬，西晋名将。</li>
+<li><b>幡</b>（fān）：旗帜。</li>
+</ol></div>
+<button class="btn2 primary" onclick="openDuo('p15')">对照翻译 ⇄</button>
+</div>
+<div class="duo-view">
+<div class="r-bar noprint"><button onclick="backDuo('p15')">← 返回原文视图</button></div>
+<div class="duo-head"><div>原 文</div><div>译 文</div></div>
+<div class="duo-grid"></div>
+<div class="tr-data" hidden>
+<p>王濬的楼船战舰顺流东下离开益州，金陵的王气便黯然消散。千寻长的拦江铁锁沉入江底，一片投降的白旗从石头城头升起。人间多少回为往朝旧事感伤，西塞山的山形却依旧枕着寒江。如今正逢四海一家、天下一统的日子，旧时的营垒萧萧荒废，只剩芦荻摇曳在秋风中。</p>
+</div>
+</div>
+</section>
+
+<!-- 16 -->
+<section class="piece" id="p16">
+<div class="p-head"><span class="p-no">之十六 · 诗词</span><h2>金铜仙人辞汉歌（并序）</h2><p class="p-meta">唐 · 李贺 ｜ 底本：《李长吉歌诗编年笺注》（中华书局）</p></div>
+<div class="normal-view">
+<div class="original">
+<p>【序】魏明帝青龙元年八月，诏宫官牵车西取汉孝武捧露盘仙人，欲立置前殿。宫官既拆盘，仙人临载，乃潸然<sup class="py">1</sup>泪下。唐诸王孙李长吉遂作金铜仙人辞汉歌。</p>
+<p>茂陵刘郎秋风客<sup class="yi">1</sup>，夜闻马嘶晓无迹。画栏桂树悬秋香，三十六宫土花<sup class="yi">2</sup>碧。</p>
+<p>魏官牵车指千里，东关酸风<sup class="yi">3</sup>射眸子。空将汉月出宫门，忆君清泪如铅水<sup class="yi">4</sup>。</p>
+<p>衰兰送客咸阳道，天若有情天亦老<sup class="yi">5</sup>。携盘独出月荒凉，渭城已远波声小。</p>
+</div>
+<div class="p-block"><h3>赏析</h3><p class="sh">魏明帝拆迁汉武帝承露盘金铜仙人，仙人临载泪下——李贺借此想象汉宫离魂：刘郎夜闻马嘶、三十六宫土花碧，汉家气象只剩苔藓。"东关酸风射眸子"一个"酸"字、"清泪如铅水"一个"铅"字，感觉奇重奇冷，是李贺独家字体。"天若有情天亦老"以天亦会老衬人世之速变，司马光评为"奇绝无对"，千年和者无数而无人能过。</p></div>
+<div class="p-block"><h3>批注 · 意思</h3><ol class="yi-list">
+<li>茂陵刘郎秋风客：汉武帝葬茂陵，曾作《秋风辞》；"秋风客"言其亦如秋风中之过客——直呼帝王为"刘郎"，唐人所未有。</li>
+<li>土花：苔藓；三十六所汉宫唯余苔藓之碧——朝代兴亡只此一句。</li>
+<li>酸风：辛酸刺眼的风；风而可"酸"可"射"，通感之极。</li>
+<li>清泪如铅水：君=汉武帝；铜人泪重如铅——金属之躯亦感伤，且暗合铜质。</li>
+<li>天若有情天亦老：天倘若有情感也会衰老——以天之无情反衬人间速朽，千古绝唱。</li>
+</ol></div>
+<div class="p-block"><h3>批注 · 生僻字读音</h3><ol class="py-list">
+<li><b>潸然</b>（shān rán）：流泪的样子。</li>
+</ol></div>
+<button class="btn2 primary" onclick="openDuo('p16')">对照翻译 ⇄</button>
+</div>
+<div class="duo-view">
+<div class="r-bar noprint"><button onclick="backDuo('p16')">← 返回原文视图</button></div>
+<div class="duo-head"><div>原 文</div><div>译 文</div></div>
+<div class="duo-grid"></div>
+<div class="tr-data" hidden>
+<p>【序】魏明帝青龙元年八月，下诏命宫官牵车西去长安，取来汉武帝捧露盘的铜仙人，想安置在前殿。宫官拆下承露盘，铜人临上车时，竟潸然泪下。唐朝宗室后裔李长吉于是写下这首《金铜仙人辞汉歌》。</p>
+<p>葬在茂陵的刘郎本是秋风中的过客，夜里仿佛听到马嘶，天亮却无踪迹。画栏边的桂树还悬着秋日的芳香，三十六所宫殿里只长了碧绿的青苔。</p>
+<p>魏国官员牵着车指向千里之外，东门外辛酸的风直刺铜人的眼眸。只有带着曾照汉宫的明月走出宫门，回忆故主，清泪淌下沉重如铅水。</p>
+<p>凋残的兰花在咸阳道上为他送行——苍天若有情感，苍天也会衰老。他捧着承露盘独自离去，月色荒凉，渭水之城已经远去，涛声也渐渐变小。</p>
+</div>
+</div>
+</section>
+
+<!-- 17 -->
+<section class="piece" id="p17">
+<div class="p-head"><span class="p-no">之十七 · 诗词</span><h2>马嵬 · 其二</h2><p class="p-meta">唐 · 李商隐 ｜ 底本：《李商隐诗歌集解》（刘学锴、余恕诚，中华书局）</p></div>
+<div class="normal-view">
+<div class="original"><p>海外徒闻更九州，他生未卜此生休。空闻虎旅传宵柝<sup class="py">1</sup>，无复鸡人报晓筹<sup class="yi">1</sup>。此日六军同驻马，当时七夕笑牵牛。如何四纪<sup class="yi">2</sup>为天子，不及卢家有莫愁<sup class="yi">3</sup>。</p></div>
+<div class="p-block"><h3>赏析</h3><p class="sh">咏马嵬之变的最冷峻一笔。首联劈头诛心：海外更九州是方士编来的鬼话，来生之约未卜，此生先已完结；颔联以"宵柝"对"晓筹"、以"空闻"对"无复"，写逃亡途中的惊惶与失去的宫廷；颈联"此日驻马"对"当时七夕"，当年笑牛郎织女的帝妃，正是今日被六军逼死的人。尾联两问收尽：做了四纪天子，竟保不住一个杨玉环——倒不如普通人家卢家妇。</p></div>
+<div class="p-block"><h3>批注 · 意思</h3><ol class="yi-list">
+<li>鸡人报晓筹：宫中戴红巾报时的"鸡人"——其声已不可复闻，暗指玄宗已失其位。</li>
+<li>四纪：十二年为一纪，玄宗在位四十五年近四纪。</li>
+<li>莫愁：古乐府中普通人家的幸福女子——末二句无一句骂语而讽到极处。</li>
+</ol></div>
+<div class="p-block"><h3>批注 · 生僻字读音</h3><ol class="py-list">
+<li><b>柝</b>（tuò）：打更用的梆子。</li>
+</ol></div>
+<button class="btn2 primary" onclick="openDuo('p17')">对照翻译 ⇄</button>
+</div>
+<div class="duo-view">
+<div class="r-bar noprint"><button onclick="backDuo('p17')">← 返回原文视图</button></div>
+<div class="duo-head"><div>原 文</div><div>译 文</div></div>
+<div class="duo-grid"></div>
+<div class="tr-data" hidden>
+<p>海外另有九州的说法不过是空听来的传闻，来生如何尚未可知，此生却已经完了。只空听到禁军夜里传来打更的梆子声，再也听不到宫中鸡人报晓的更筹。这一天六军一齐勒马不发，当年的七夕却还在笑牛郎织女不得长相聚。为什么做了近四十年的天子，竟连普通人家的莫愁女都保不住？</p>
+</div>
+</div>
+</section>
+
+<!-- 18 -->
+<section class="piece" id="p18">
+<div class="p-head"><span class="p-no">之十八 · 诗词</span><h2>浪淘沙令</h2><p class="p-meta">南唐 · 李煜 ｜ 底本：王国维辑《南唐二主词》；参唐圭璋编《全宋词》</p></div>
+<div class="normal-view">
+<div class="original">
+<p>帘外雨潺潺，春意阑珊<sup class="yi">1</sup>。罗衾<sup class="py">1</sup>不耐五更寒。梦里不知身是客，一晌贪欢<sup class="yi">2</sup>。</p>
+<p>独自莫凭栏，无限江山。别时容易见时难。流水落花春去也，天上人间<sup class="yi">3</sup>。</p>
+</div>
+<div class="p-block"><h3>赏析</h3><p class="sh">亡国后的绝笔级作品。五更梦醒，罗衾不胜其寒——梦里是帝王，醒来是俘虏，"一晌贪欢"四字，惨中之极淡语。下片自己劝自己"莫凭栏"，因为凭栏必见无限江山；结句"流水落花春去也，天上人间"：春去了，人去了，旧日的天上与今日的人间，一语并置而不加解释，任其轰然对撞。王国维"词至李后主而眼界始大，感慨遂深"，此篇是标本。</p></div>
+<div class="p-block"><h3>批注 · 意思</h3><ol class="yi-list">
+<li>阑珊：将尽、衰落。</li>
+<li>一晌贪欢：一晌=片刻；只在梦里偷得片刻欢愉——"贪"字自嘲至痛。</li>
+<li>天上人间：四字并置，不作一语说明——欢与恨、生与死、帝王与俘虏，全在其中。</li>
+</ol></div>
+<div class="p-block"><h3>批注 · 生僻字读音</h3><ol class="py-list">
+<li><b>衾</b>（qīn）：被子。</li>
+</ol></div>
+<button class="btn2 primary" onclick="openDuo('p18')">对照翻译 ⇄</button>
+</div>
+<div class="duo-view">
+<div class="r-bar noprint"><button onclick="backDuo('p18')">← 返回原文视图</button></div>
+<div class="duo-head"><div>原 文</div><div>译 文</div></div>
+<div class="duo-grid"></div>
+<div class="tr-data" hidden>
+<p>门帘外雨声潺潺，春天的气象已将阑珊殆尽。丝绸被子挡不住五更时分的寒意。只有在梦里才忘了自己是个异乡的囚客，还贪恋着片刻的欢愉。</p>
+<p>独自一人时千万不要凭栏远望——那望不尽的江山啊。当初别离容易，如今再见却千难万难。像流水带走落花，春天就这样去了——一个在天上，一个在人间。</p>
+</div>
+</div>
+</section>
+
+<!-- 19 -->
+<section class="piece" id="p19">
+<div class="p-head"><span class="p-no">之十九 · 诗词</span><h2>八声甘州</h2><p class="p-meta">北宋 · 柳永 ｜ 底本：《乐章集校注》（薛瑞生，中华书局）</p></div>
+<div class="normal-view">
+<div class="original">
+<p>对潇潇暮雨洒江天，一番洗清秋。渐霜风凄紧，关河冷落，残照当楼。是处红衰翠减，苒苒<sup class="py">1</sup>物华休。惟有长江水，无语东流。</p>
+<p>不忍登高临远，望故乡渺邈，归思难收。叹年来踪迹，何事苦淹留？想佳人妆楼颙<sup class="py">2</sup>望<sup class="yi">1</sup>，误几回、天际识归舟。争知我，倚阑干处，正恁<sup class="py">3</sup>凝愁！</p>
+</div>
+<div class="p-block"><h3>赏析</h3><p class="sh">柳永慢词由俗入雅的极致。上片一层层写尽秋气：暮雨洗秋、霜风凄紧、残照当楼，"渐"字领起三句一气贯注；物华将尽，唯长江无语东流。下片笔锋一转，写"不忍"登高偏又登高，再翻一层悬想佳人也在妆楼望他、误认归舟——两地相思互相投影。苏轼评"渐霜风凄紧，关河冷落，残照当楼"三句"不减唐人高处"，柳永雅词的地位由此三句立定。</p></div>
+<div class="p-block"><h3>批注 · 意思</h3><ol class="yi-list">
+<li>妆楼颙望：多少次把天边来船错认成你的归舟——对面落笔，加倍写法。</li>
+</ol></div>
+<div class="p-block"><h3>批注 · 生僻字读音</h3><ol class="py-list">
+<li><b>苒苒</b>（rǎn rǎn）：渐渐地。</li>
+<li><b>颙</b>（yóng）：抬头凝望。</li>
+<li><b>恁</b>（nèn）：如此、这样。</li>
+</ol></div>
+<button class="btn2 primary" onclick="openDuo('p19')">对照翻译 ⇄</button>
+</div>
+<div class="duo-view">
+<div class="r-bar noprint"><button onclick="backDuo('p19')">← 返回原文视图</button></div>
+<div class="duo-head"><div>原 文</div><div>译 文</div></div>
+<div class="duo-grid"></div>
+<div class="tr-data" hidden>
+<p>面对潇潇暮雨洒满江天，一场秋雨把天地洗出一派清秋。渐渐地，霜风一阵紧似一阵地凄冷，关山河谷一片冷落，夕阳的残照正照在楼上。到处红花凋谢、绿叶枯残，美好的景物渐渐消歇了。只有长江的水，默默无语地向东流去。</p>
+<p>不忍心登高眺远——一望故乡那样遥远，思归之情就再难收拾。可叹这几年来的行踪，究竟为了什么苦苦滞留他乡？想那佳人定在妆楼上凝神远望，多少回把天边驶来的船错认成我的归舟。她又哪知道，我倚着栏杆的时候，也正这样满怀愁思凝望不休！</p>
+</div>
+</div>
+</section>
+
+<!-- 20 -->
+<section class="piece" id="p20">
+<div class="p-head"><span class="p-no">之二十 · 诗词</span><h2>蝶恋花</h2><p class="p-meta">北宋 · 晏殊 ｜ 底本：唐圭璋编《全宋词》（中华书局）</p></div>
+<div class="normal-view">
+<div class="original">
+<p>槛<sup class="py">1</sup>菊愁烟兰泣露。罗幕轻寒，燕子双飞去。明月不谙<sup class="py">2</sup>离恨苦<sup class="yi">1</sup>。斜光到晓穿朱户。</p>
+<p>昨夜西风凋碧树。独上高楼，望尽天涯路。欲寄彩笺兼尺素<sup class="yi">2</sup>。山长水阔知何处。</p>
+</div>
+<div class="p-block"><h3>赏析</h3><p class="sh">上片晨起所见：菊笼愁烟、兰凝泣露，燕子双飞反衬人独；明月无知，偏整夜照进离人门户。下片追忆昨夜：西风一夜凋尽碧树，独上高楼望尽天涯——境界陡然阔大；结尾寄书无处，"山长水阔"四字把相思推到无解处。王国维引"昨夜西风"三句为古今成大事业大学问的第一境界：望断天涯，正是求索者的孤高起步。</p></div>
+<div class="p-block"><h3>批注 · 意思</h3><ol class="yi-list">
+<li>明月不谙离恨苦：谙=懂得；明月不谙离恨，故扰人到晓。</li>
+<li>彩笺兼尺素：彩笺=题诗的信笺，尺素=书信；两种都无处可寄。</li>
+</ol></div>
+<div class="p-block"><h3>批注 · 生僻字读音</h3><ol class="py-list">
+<li><b>槛</b>（jiàn）：栏杆。</li>
+<li><b>谙</b>（ān）：熟悉、懂得。</li>
+</ol></div>
+<button class="btn2 primary" onclick="openDuo('p20')">对照翻译 ⇄</button>
+</div>
+<div class="duo-view">
+<div class="r-bar noprint"><button onclick="backDuo('p20')">← 返回原文视图</button></div>
+<div class="duo-head"><div>原 文</div><div>译 文</div></div>
+<div class="duo-grid"></div>
+<div class="tr-data" hidden>
+<p>栏杆外的菊花笼着愁烟，兰草挂着露珠像在哭泣。罗帐间透着微微寒意，燕子成双飞走了。明月不懂离别的恨苦，斜斜的光直到天亮还穿进红漆门户。</p>
+<p>昨夜西风把绿树吹得凋零。我独自登上高楼，把通向天边的路望了个遍。想把彩笺和书信一并寄出——可山长水远，又知道你在哪里呢？</p>
+</div>
+</div>
+</section>
+
+<!-- 21 -->
+<section class="piece" id="p21">
+<div class="p-head"><span class="p-no">之二十一 · 诗词</span><h2>蝶恋花</h2><p class="p-meta">北宋 · 欧阳修 ｜ 底本：唐圭璋编《全宋词》（中华书局）</p></div>
+<div class="normal-view">
+<div class="original">
+<p>庭院深深深几许？杨柳堆烟，帘幕无重数。玉勒雕鞍<sup class="yi">1</sup>游冶处，楼高不见章台路<sup class="yi">2</sup>。</p>
+<p>雨横<sup class="py">1</sup>风狂三月暮。门掩黄昏，无计留春住。泪眼问花花不语，乱红飞过秋千去。</p>
+</div>
+<div class="p-block"><h3>赏析</h3><p class="sh">三个"深"字叠起庭院的层层封锁，帘幕无数重，锁住的不只是庭院更是深闺之人。上片写她的望——楼再高也望不见冶游不归的丈夫；下片写春暮风雨、黄昏掩门，遂有"泪眼问花"两句：含泪问花，花不语，反被一阵风卷得乱红飞过秋千——人与花一同飘零，无理而妙。李清照自述酷爱此篇、特意追和，王国维举为"有我之境"的范本。</p></div>
+<div class="p-block"><h3>批注 · 意思</h3><ol class="yi-list">
+<li>玉勒雕鞍：镶玉的马笼头、雕花的马鞍，代指丈夫的车马游冶。</li>
+<li>章台路：汉代长安章台为歌妓聚居处，代指游冶之地。</li>
+</ol></div>
+<div class="p-block"><h3>批注 · 生僻字读音</h3><ol class="py-list">
+<li><b>雨横</b>（hèng）：雨下得大而蛮横。</li>
+</ol></div>
+<button class="btn2 primary" onclick="openDuo('p21')">对照翻译 ⇄</button>
+</div>
+<div class="duo-view">
+<div class="r-bar noprint"><button onclick="backDuo('p21')">← 返回原文视图</button></div>
+<div class="duo-head"><div>原 文</div><div>译 文</div></div>
+<div class="duo-grid"></div>
+<div class="tr-data" hidden>
+<p>庭院深深，到底有多深？杨柳间雾气堆积，帘幕重重数不清。他乘着宝马雕车游冶的地方，楼再高，也望不见那条章台路。</p>
+<p>雨大得横扫，风刮得狂暴，正是三月将暮。黄昏中掩上大门，用什么办法也留不住春天。含着泪去问落花，花默默无语，一阵风把纷乱的落花吹过秋千那边去了。</p>
+</div>
+</div>
+</section>
+
+<!-- 22 -->
+<section class="piece" id="p22">
+<div class="p-head"><span class="p-no">之二十二 · 诗词</span><h2>临江仙</h2><p class="p-meta">北宋 · 晏几道 ｜ 底本：《小山词》（中华书局点校本）</p></div>
+<div class="normal-view">
+<div class="original">
+<p>梦后楼台高锁，酒醒帘幕低垂。去年春恨却来时。落花人独立，微雨燕双飞。</p>
+<p>记得小蘋<sup class="py">1</sup>初见<sup class="yi">1</sup>，两重心字罗衣<sup class="yi">2</sup>。琵琶弦上说相思。当时明月在，曾照彩云归<sup class="yi">3</sup>。</p>
+</div>
+<div class="p-block"><h3>赏析</h3><p class="sh">宋人小令的压卷之作之一。上片今境：梦后酒醒，楼台高锁、帘幕低垂，两句十二字全是冷寂的物态；"落花人独立，微雨燕双飞"——借五代翁宏成句而点铁成金，人独立而燕双飞，孤寂写到极处。下片追忆小蘋初见：心字罗衣、琵琶诉情，结句"当时明月在，曾照彩云归"——月还在，人已散，一"曾"字万劫。陈廷焯评"既闲婉，又沉着"。</p></div>
+<div class="p-block"><h3>批注 · 意思</h3><ol class="yi-list">
+<li>小蘋：歌女名，晏几道《小山词》自跋记其事。</li>
+<li>两重心字罗衣：衣领上绣着成对的心字花纹——"两重"即两心相印。</li>
+<li>彩云：喻小蘋；月仍照旧，彩云已散——结句之淡，痛在言外。</li>
+</ol></div>
+<div class="p-block"><h3>批注 · 生僻字读音</h3><ol class="py-list">
+<li><b>蘋</b>（píng）：同"苹"，人名用字。</li>
+</ol></div>
+<button class="btn2 primary" onclick="openDuo('p22')">对照翻译 ⇄</button>
+</div>
+<div class="duo-view">
+<div class="r-bar noprint"><button onclick="backDuo('p22')">← 返回原文视图</button></div>
+<div class="duo-head"><div>原 文</div><div>译 文</div></div>
+<div class="duo-grid"></div>
+<div class="tr-data" hidden>
+<p>梦醒后只见楼台高锁，酒醒时帘幕低垂。去年的春愁，偏偏又在此时涌上心头。落花纷纷中我独自伫立，细雨里燕子成双飞过。</p>
+<p>还记得初见小蘋时，她穿着绣有两重心字的罗衣。她借着琵琶的琴弦，把相思娓娓诉说。当时的明月如今还在，它曾照着她像彩云一样归去。</p>
+</div>
+</div>
+</section>
+
+<!-- 23 -->
+<section class="piece" id="p23">
+<div class="p-head"><span class="p-no">之二十三 · 诗词</span><h2>明妃曲 · 其一</h2><p class="p-meta">北宋 · 王安石 ｜ 底本：《临川先生文集》（中华书局点校本）</p></div>
+<div class="normal-view">
+<div class="original">
+<p>明妃初出汉宫时，泪湿春风鬓脚垂。低徊<sup class="py">1</sup>顾影无颜色，尚得君王不自持。</p>
+<p>归来却怪丹青手，入眼平生几曾有。意态由来画不得，当时枉杀毛延寿<sup class="yi">1</sup>。</p>
+<p>一去心知更不归，可怜著尽汉宫衣。寄声欲问塞南事，只有年年鸿雁飞。</p>
+<p>家人万里传消息，好在毡城<sup class="py">2</sup>莫相忆。君不见咫尺长门闭阿娇<sup class="yi">2</sup>，人生失意无南北。</p>
+</div>
+<div class="p-block"><h3>赏析</h3><p class="sh">咏昭君的千年翻案之作。不写"红颜薄命"的套语，先写泪湿春风、低徊顾影——丑到极处恰是美到极处，美到令君王失态；再翻案：意态本不可画，毛延寿死得冤；末段家人传语"好在毡城莫相忆"，逼出千古名句："君不见咫尺长门闭阿娇，人生失意无南北"——失意之人，出塞与留宫并无分别。立意一出，欧阳修、梅尧臣、司马光争相唱和，震动北宋文坛。</p></div>
+<div class="p-block"><h3>批注 · 意思</h3><ol class="yi-list">
+<li>当时枉杀毛延寿：意态神韵从来画不出来——为毛延寿翻案的惊人之论。</li>
+<li>长门闭阿娇：陈皇后失宠被闭长门宫，距汉宫咫尺——身在汉宫亦是失意，故"人生失意无南北"。</li>
+</ol></div>
+<div class="p-block"><h3>批注 · 生僻字读音</h3><ol class="py-list">
+<li><b>低徊</b>（huái）：徘徊流连。</li>
+<li><b>毡城</b>（zhān）：匈奴所居毡帐之城。</li>
+</ol></div>
+<button class="btn2 primary" onclick="openDuo('p23')">对照翻译 ⇄</button>
+</div>
+<div class="duo-view">
+<div class="r-bar noprint"><button onclick="backDuo('p23')">← 返回原文视图</button></div>
+<div class="duo-head"><div>原 文</div><div>译 文</div></div>
+<div class="duo-grid"></div>
+<div class="tr-data" hidden>
+<p>明妃初次走出汉宫的时候，泪水打湿了面颊，鬓发低垂。她低回徘徊、顾影自怜，全无颜色，却仍让汉元帝看得情难自持。</p>
+<p>（元帝）回来却怪罪画工：这样的容貌，平生几时曾见过？可人的神态意韵从来是画不出的——当时杀毛延寿，实在是冤枉。</p>
+<p>她一去就心知再难归汉，可怜把从汉宫带去的衣裳都穿尽了。捎信想问一问塞南的家国之事，能捎来的却只有年年南飞的鸿雁。</p>
+<p>家里人在万里之外传话：安心待在毡帐之城，不要总互相思念。你没看见吗？近在咫尺的长门宫不也关着失宠的阿娇——人生失意，在哪里都是一样的。</p>
+</div>
+</div>
+</section>
+
+<!-- 24 -->
+<section class="piece" id="p24">
+<div class="p-head"><span class="p-no">之二十四 · 诗词</span><h2>水龙吟 · 次韵章质夫杨花词</h2><p class="p-meta">北宋 · 苏轼 ｜ 底本：龙榆生《东坡乐府笺》（上海古籍出版社）</p></div>
+<div class="normal-view">
+<div class="original">
+<p>似花还似非花，也无人惜从教<sup class="yi">1</sup>坠。抛家傍路，思量却是，无情有思<sup class="yi">2</sup>。萦损柔肠，困酣娇眼<sup class="yi">3</sup>，欲开还闭。梦随风万里，寻郎去处，又还被、莺呼起。</p>
+<p>不恨此花飞尽，恨西园、落红难缀<sup class="py">1</sup>。晓来雨过，遗踪何在？一池萍碎<sup class="yi">4</sup>。春色三分，二分尘土，一分流水。细看来，不是杨花，点点是离人泪。</p>
+</div>
+<div class="p-block"><h3>赏析</h3><p class="sh">咏物词的千古第一。杨花"似花还似非花"，起笔即抓住咏物的两难；随即把杨花认作思妇：抛家傍路是"无情有思"，柔肠萦损、娇眼困酣是柳叶柳芽，梦随莺起全从柳絮飘飞化出。下片"一池萍碎"用自注"杨花落水为浮萍"的传说，"春色三分"分与尘土流水，结句"点点是离人泪"——物我合一到分辨不出。王国维断语："咏物之词，自以东坡《水龙吟》为最工。"且是次韵和作而胜原作，词史奇案。</p></div>
+<div class="p-block"><h3>批注 · 意思</h3><ol class="yi-list">
+<li>从教：任凭。</li>
+<li>无情有思：看似无情，实则有意念——韩愈"杨花榆荚无才思"翻案。</li>
+<li>困酣娇眼：柳叶如思妇困倦的娇眼（初生柳芽欲开还闭）。</li>
+<li>一池萍碎：自注："杨花落水为浮萍，验之信然。"</li>
+</ol></div>
+<div class="p-block"><h3>批注 · 生僻字读音</h3><ol class="py-list">
+<li><b>缀</b>（zhuì）：连缀、重新接上。</li>
+</ol></div>
+<button class="btn2 primary" onclick="openDuo('p24')">对照翻译 ⇄</button>
+</div>
+<div class="duo-view">
+<div class="r-bar noprint"><button onclick="backDuo('p24')">← 返回原文视图</button></div>
+<div class="duo-head"><div>原 文</div><div>译 文</div></div>
+<div class="duo-grid"></div>
+<div class="tr-data" hidden>
+<p>它像花又不像花，也没有人怜惜，任凭它四处飘坠。它离开枝头、依傍路边，细想起来，看似无情，却自有它的愁思。它像思妇的柔肠为之萦绕损伤，像娇困的柳眼困倦极了，想睁开又闭上。它像在梦里随风飞出万里去寻郎君的去处，却又被黄莺的啼叫惊醒。</p>
+<p>不恨这杨花飞尽，只恨西园里落花满地，再难重新缀上枝头。清晨一阵雨过后，它的踪迹在哪里？只见满池浮萍细碎。这三分春色啊，两分化作了路上的尘土，一分化作了沟里的流水。细细看来，那哪里是杨花——一点一点，全是离人的眼泪。</p>
+</div>
+</div>
+</section>
+
+<!-- 25 -->
+<section class="piece" id="p25">
+<div class="p-head"><span class="p-no">之二十五 · 诗词</span><h2>兰陵王 · 柳</h2><p class="p-meta">北宋 · 周邦彦 ｜ 底本：《片玉集》校注本；参唐圭璋编《全宋词》</p></div>
+<div class="normal-view">
+<div class="original">
+<p>柳阴直，烟里丝丝弄碧。隋堤上、曾见几番，拂水飘绵<sup class="yi">1</sup>送行色。登临望故国，谁识京华倦客？长亭路，年去岁来，应折柔条过千尺。</p>
+<p>闲寻旧踪迹，又酒趁哀弦，灯照离席。梨花榆火催寒食<sup class="yi">2</sup>。愁一箭风快，半篙波暖，回头迢递便数驿，望人在天北。</p>
+<p>凄恻，恨堆积！渐别浦萦回，津堠<sup class="py">1</sup>岑寂，斜阳冉冉春无极。念月榭携手，露桥闻笛。沉思前事，似梦里，泪暗滴。</p>
+</div>
+<div class="p-block"><h3>赏析</h3><p class="sh">周邦彦三叠慢词的极则，也是宋代送别词的绝调。第一叠以"柳阴直"起，柳是全篇的绳：隋堤之柳年年"拂水飘绵送行色"，"应折柔条过千尺"——送别的柳条折了几千尺，离人之多可想而知。第二叠写客中又送客，船快如箭，"回头迢递便数驿，望人在天北"——一瞬间的速度写出永诀般的距离。第三叠"斜阳冉冉春无极"，愁绪与春色同其无极。宋末人唱此词送别以寄亡国之哀，可见其入人之深。</p></div>
+<div class="p-block"><h3>批注 · 意思</h3><ol class="yi-list">
+<li>飘绵：柳絮飘飞。</li>
+<li>梨花榆火催寒食：寒食禁火、清明取榆柳新火，点明时节匆匆。</li>
+</ol></div>
+<div class="p-block"><h3>批注 · 生僻字读音</h3><ol class="py-list">
+<li><b>津堠</b>（hòu）：渡口守望的土堡。</li>
+</ol></div>
+<button class="btn2 primary" onclick="openDuo('p25')">对照翻译 ⇄</button>
+</div>
+<div class="duo-view">
+<div class="r-bar noprint"><button onclick="backDuo('p25')">← 返回原文视图</button></div>
+<div class="duo-head"><div>原 文</div><div>译 文</div></div>
+<div class="duo-grid"></div>
+<div class="tr-data" hidden>
+<p>柳树的阴影笔直成行，烟霭里柳丝千条摆弄着碧色。这隋堤上，曾多少次见它拂着水面、飘着柳絮，送走一拨又一拨远行的人。登上高处眺望故乡，又有谁认识我这个在京城里厌倦了的过客？长亭路上，年年岁岁，人们折下送别的柳条恐怕已超过千尺。</p>
+<p>闲来寻起旧日的行迹，又是一场离别：酒伴着哀伤的琴弦，灯光照着饯别的筵席。梨花开了，榆柳新火将颁，寒食节催着人上路。正愁风送船快如离弦之箭，半篙暖水中一回头已过好几处驿站，回头望去，送行的人已在天的北边。</p>
+<p>凄凉悲恻，离恨重重堆积！渐渐地船在别离的水湾里回环，渡口的土堡一片寂静，斜阳缓缓下沉，而春色却无边无际。想起当年在月台上携手同游，在露桥边听人吹笛。细细回想这些往事，恍如一场梦，眼泪不由得暗暗滴落。</p>
+</div>
+</div>
+</section>
+
+<!-- 26 -->
+<section class="piece" id="p26">
+<div class="p-head"><span class="p-no">之二十六 · 诗词</span><h2>永遇乐</h2><p class="p-meta">南宋 · 李清照 ｜ 底本：徐培均《李清照集笺注》（上海古籍出版社）</p></div>
+<div class="normal-view">
+<div class="original">
+<p>落日熔金，暮云合璧，人在何处。染柳烟浓，吹梅笛怨<sup class="yi">1</sup>，春意知几许。元宵佳节，融和天气，次第<sup class="yi">2</sup>岂无风雨。来相召、香车宝马，谢他酒朋诗侣。</p>
+<p>中州<sup class="yi">3</sup>盛日，闺门多暇，记得偏重三五<sup class="yi">4</sup>。铺翠冠儿，捻<sup class="py">1</sup>金雪柳，簇带争济楚<sup class="py">2</sup><sup class="yi">5</sup>。如今憔悴，风鬟霜鬓，怕见夜间出去。不如向、帘儿底下，听人笑语。</p>
+</div>
+<div class="p-block"><h3>赏析</h3><p class="sh">李清照晚年元宵词。夕阳好、暮云好，偏问一句"人在何处"——风景的全盛反衬身世的飘零。元宵天气融和，她却先想"次第岂无风雨"，谢绝了香车宝马的召邀。下片追忆汴京盛日闺门三五之游：铺翠冠儿、捻金雪柳，少女妆扮争俏；如今风鬟霜鬓，怕见夜出，只在帘儿底下听人笑语。全篇不用一个亡国字样，而家国之痛、身世之悲浸透纸背。刘辰翁自言宋亡后每诵此词，泣下不能自禁。</p></div>
+<div class="p-block"><h3>批注 · 意思</h3><ol class="yi-list">
+<li>吹梅笛怨：笛吹《梅花落》曲，声调哀怨。</li>
+<li>次第：转眼、接着——好天气也难保不风雨，心境先怯。</li>
+<li>中州：汴京。</li>
+<li>三五：正月十五元宵。</li>
+<li>簇带争济楚：妆扮齐整、争俏斗艳。</li>
+</ol></div>
+<div class="p-block"><h3>批注 · 生僻字读音</h3><ol class="py-list">
+<li><b>捻</b>（niǎn）：搓捻、用金线捻制。</li>
+<li><b>济楚</b>（jǐ chǔ）：齐整、漂亮。</li>
+</ol></div>
+<button class="btn2 primary" onclick="openDuo('p26')">对照翻译 ⇄</button>
+</div>
+<div class="duo-view">
+<div class="r-bar noprint"><button onclick="backDuo('p26')">← 返回原文视图</button></div>
+<div class="duo-head"><div>原 文</div><div>译 文</div></div>
+<div class="duo-grid"></div>
+<div class="tr-data" hidden>
+<p>落日像熔化的金子，暮云像璧玉般合拢——可如今人又在何处呢？浓烟染绿了柳色，笛子吹出《梅花落》的哀怨，这春意到底有几分呢？元宵佳节，天气融和，可转眼难道就没有风雨吗？朋友们驾着香车宝马来相邀，我谢绝了那些酒朋诗侣。</p>
+<p>想当年在汴京繁盛的日子里，闺中多有闲暇，最记得那时特别看重元宵。戴着翡翠铺缀的帽子，插着金线捻的雪柳，打扮得齐齐整整，争俏斗艳。如今容颜憔悴，鬓发散乱染霜，害怕在夜里出去见人。倒不如躲在帘子底下，听听别人的欢声笑语罢了。</p>
+</div>
+</div>
+</section>
+
+<!-- 27 -->
+<section class="piece" id="p27">
+<div class="p-head"><span class="p-no">之二十七 · 诗词</span><h2>贺新郎</h2><p class="p-meta">南宋 · 辛弃疾 ｜ 底本：邓广铭《稼轩词编年笺注》（上海古籍出版社）</p></div>
+<div class="normal-view">
+<div class="original">
+<p>甚矣吾衰矣。怅平生、交游零落，只今余几！白发空垂三千丈，一笑人间万事。问何物、能令公喜<sup class="yi">1</sup>？我见青山多妩媚，料青山见我应如是。情与貌，略相似。</p>
+<p>一尊搔首东窗里。想渊明《停云》诗就<sup class="yi">2</sup>，此时风味。江左沉酣求名者，岂识浊醪<sup class="py">1</sup>妙理。回首叫、云飞风起。不恨古人吾不见，恨古人不见吾狂耳<sup class="yi">3</sup>。知我者，二三子。</p>
+</div>
+<div class="p-block"><h3>赏析</h3><p class="sh">稼轩晚年的自画像。"甚矣吾衰矣"劈头引《论语》而自嘲，平生交游零落，唯余青山可对："我见青山多妩媚，料青山见我应如是"——人与山互认妩媚，狂到极处，孤独也到极处。下片以渊明《停云》自况，骂尽江左求名之辈，"回首叫、云飞风起"一声长啸，逼出全篇名句："不恨古人吾不见，恨古人不见吾狂耳。"岳珂《桯史》载其每宴必令歌伎唱此词而自诵此句——是他的自负，也是他的绝响。</p></div>
+<div class="p-block"><h3>批注 · 意思</h3><ol class="yi-list">
+<li>问何物、能令公喜：用《世说新语》典——郗超、王恂死后，桓温叹能令公喜者再无其人；此处答案是青山。</li>
+<li>想渊明《停云》诗就：《停云》为陶渊明思亲友之诗，作者以渊明自况。</li>
+<li>恨古人不见吾狂：知音不在当下而在古人，而古人又看不到我的狂——双重的孤独，稼轩自许之词。</li>
+</ol></div>
+<div class="p-block"><h3>批注 · 生僻字读音</h3><ol class="py-list">
+<li><b>浊醪</b>（láo）：浊酒。</li>
+</ol></div>
+<button class="btn2 primary" onclick="openDuo('p27')">对照翻译 ⇄</button>
+</div>
+<div class="duo-view">
+<div class="r-bar noprint"><button onclick="backDuo('p27')">← 返回原文视图</button></div>
+<div class="duo-head"><div>原 文</div><div>译 文</div></div>
+<div class="duo-grid"></div>
+<div class="tr-data" hidden>
+<p>我是真的老了啊。惆怅平生交往的朋友零落四散，如今还剩几个！白发空自垂下三千丈，对人间万事只能付之一笑。试问还有什么东西，能让我欢喜起来？我看青山那样妩媚可爱，料想青山看我大概也是这样。情怀与形貌，大致相似。</p>
+<p>在东窗下对着一杯酒搔首沉思。想陶渊明写成《停云》诗的时候，也是这般风味。江东那些借醉酒而沽名钓誉的人，哪里懂得浊酒中的妙理。猛然回首长啸一声，只见风起云飞。不遗憾我见不到古人，只遗憾古人见不到我的疏狂啊。能懂我的，也只有你们这几位了。</p>
+</div>
+</div>
+</section>
+
+<!-- 28 -->
+<section class="piece" id="p28">
+<div class="p-head"><span class="p-no">之二十八 · 诗词（两首全收）</span><h2>暗香 · 疏影</h2><p class="p-meta">南宋 · 姜夔（自度曲）｜ 底本：《白石道人歌曲》校注本；参夏承焘《姜白石词编年笺校》</p></div>
+<div class="normal-view">
+<div class="original">
+<p><b>暗香</b>　旧时月色，算几番照我，梅边吹笛？唤起玉人，不管清寒与攀摘。何逊而今渐老，都忘却春风词笔。但怪得、竹外疏花，香冷入瑶席。</p>
+<p>江国，正寂寂。叹寄与路遥，夜雪初积。翠尊易泣，红萼<sup class="py">1</sup>无言耿相忆<sup class="yi">1</sup>。长记曾携手处，千树压、西湖寒碧。又片片、吹尽也，几时见得？</p>
+<p><b>疏影</b>　苔枝缀玉，有翠禽小小，枝上同宿。客里相逢，篱角黄昏，无言自倚修竹。昭君不惯胡沙远，但暗忆、江南江北。想佩环、月夜归来，化作此花幽独<sup class="yi">2</sup>。</p>
+<p>犹记深宫旧事<sup class="yi">3</sup>，那人正睡里，飞近蛾绿。莫似春风，不管盈盈，早与安排金屋<sup class="yi">4</sup>。还教一片随波去，又却怨、玉龙哀曲。等恁<sup class="py">2</sup>时、重觅幽香，已入小窗横幅。</p>
+</div>
+<div class="p-block"><h3>赏析</h3><p class="sh">姜夔自度曲双璧，咏梅词的千古绝调。《暗香》由旧时月色梅边吹笛的记忆起，落到今夜竹外疏花香冷瑶席；"寄与路遥，夜雪初积"翻用陆凯寄梅典，"千树压、西湖寒碧"七字写尽梅盛西湖之境，末句"又片片吹尽也，几时见得"追问到无可追问。《疏影》纯以典写梅：翠禽、昭君佩环化作幽独之花、寿阳公主蛾绿、金屋藏娇，篇末幽香"已入小窗横幅"——花已入画，人已入梦。张炎《词源》立"清空"一格即举此二篇为范。</p></div>
+<div class="p-block"><h3>批注 · 意思</h3><ol class="yi-list">
+<li>红萼无言耿相忆：耿=耿耿于心；红梅无言，长记旧忆。</li>
+<li>化作此花幽独：用杜甫"环佩空归月夜魂"——昭君魂魄化作梅花，咏梅而及家国。</li>
+<li>深宫旧事：寿阳公主卧含章殿，梅花飞落额上成"梅花妆"。</li>
+<li>安排金屋：用汉武帝金屋藏娇典——劝惜花如惜美人。</li>
+</ol></div>
+<div class="p-block"><h3>批注 · 生僻字读音</h3><ol class="py-list">
+<li><b>萼</b>（è）：花萼、花朵。</li>
+<li><b>恁</b>（nèn）时：那时。</li>
+</ol></div>
+<button class="btn2 primary" onclick="openDuo('p28')">对照翻译 ⇄</button>
+</div>
+<div class="duo-view">
+<div class="r-bar noprint"><button onclick="backDuo('p28')">← 返回原文视图</button></div>
+<div class="duo-head"><div>原 文</div><div>译 文</div></div>
+<div class="duo-grid"></div>
+<div class="tr-data" hidden>
+<p>【暗香】往昔的月色，算来多少次照着我，在梅边吹响笛子？笛声唤起美人，她不顾清寒，陪我一同攀折梅花。我如今像渐渐老去的何逊，早已忘却了歌咏春风的词笔。只是奇怪，竹林外稀疏的梅花，竟把冷冷清香送进了华美的宴席。</p>
+<p>水乡泽国，正一片寂静。想折梅寄远，叹路途遥远，夜里又刚刚积起厚雪。对着翠绿的酒杯容易落泪，红梅默默无言，长记着旧日相忆之情。永远记得我们携手同游的地方，千树梅花压映着西湖一片寒碧。如今梅花又要一片片吹落殆尽了，什么时候才能再见呢？</p>
+<p>【疏影】长满青苔的枝头缀着玉般的梅花，有一双小小的翠鸟，在枝上同宿。客居中与它相逢，在篱笆角落的黄昏里，它默默无言，独自倚着修长的翠竹。它像远嫁不惯胡地风沙的昭君，只在暗暗思念江南江北。想是她的佩环在月夜里归来，化作了这株幽独的梅花。</p>
+<p>还记得深宫旧事：寿阳公主睡梦里，梅花轻轻飞落在她的眉心。不要像春风那样不管花的轻盈芳洁，应该早早为它安排金屋珍藏。可终究让花瓣一片片随水漂去，人们又只能吹奏《梅花落》，哀怨那如玉龙的笛声。等到那时再去寻觅这缕幽香，它已经映进了小窗上的画幅。</p>
+</div>
+</div>
+</section>
+
+<!-- 29 -->
+<section class="piece" id="p29">
+<div class="p-head"><span class="p-no">之二十九 · 诗词</span><h2>关山月</h2><p class="p-meta">南宋 · 陆游 ｜ 底本：钱仲联《剑南诗稿校注》（上海古籍出版社）</p></div>
+<div class="normal-view">
+<div class="original">
+<p>和戎<sup class="yi">1</sup>诏下十五年，将军不战空临边。朱门沉沉按歌舞，厩<sup class="py">1</sup>马肥死弓断弦。</p>
+<p>戍楼刁斗<sup class="py">2</sup>催落月，三十从军今白发。笛里谁知壮士心，沙头空照征人骨。</p>
+<p>中原干戈古亦闻，岂有逆胡传子孙！遗民忍死望恢复，几处今宵垂泪痕。</p>
+</div>
+<div class="p-block"><h3>赏析</h3><p class="sh">乐府旧题《关山月》被陆游注入全新的痛：同一轮月下三幅画面——将军临边而不战、朱门歌舞、战马肥死；戍楼老卒吹笛、沙头白骨；中原遗民忍死望恢复。三段之间不着一字议论，对照本身就是控诉。"岂有逆胡传子孙"一问，问的是和戎的国策。全篇以"月"贯串：落月、照骨之月、今宵之月，冷光如史笔。</p></div>
+<div class="p-block"><h3>批注 · 意思</h3><ol class="yi-list">
+<li>和戎：与异族议和——隆兴和议（1164）至此约十五年，朝廷罢战之诏是全诗的案由。</li>
+</ol></div>
+<div class="p-block"><h3>批注 · 生僻字读音</h3><ol class="py-list">
+<li><b>厩</b>（jiù）：马棚。</li>
+<li><b>刁斗</b>（diāo dǒu）：军中白天做饭、夜里打更的铜器。</li>
+</ol></div>
+<button class="btn2 primary" onclick="openDuo('p29')">对照翻译 ⇄</button>
+</div>
+<div class="duo-view">
+<div class="r-bar noprint"><button onclick="backDuo('p29')">← 返回原文视图</button></div>
+<div class="duo-head"><div>原 文</div><div>译 文</div></div>
+<div class="duo-grid"></div>
+<div class="tr-data" hidden>
+<p>朝廷下诏与金人议和已经十五年了，将军们不打仗，白白地驻守在边境。深宅朱门里沉沉地按着节拍歌舞，马棚里的战马肥死了，弓弦也断了。</p>
+<p>戍楼上的刁斗声催着一轮轮落月，三十岁从军的人如今已满头白发。笛声里谁知道壮士的心事，月光白白地照着沙场上征人的白骨。</p>
+<p>中原用兵打仗，古时候也听说过，可哪有让异族侵略者传子传孙、久占中原的道理！沦陷区的百姓忍死苦撑，盼望着收复失地——今夜又有多少人家在暗暗垂泪！</p>
+</div>
+</div>
+</section>
+
+<!-- 30 -->
+<section class="piece" id="p30">
+<div class="p-head"><span class="p-no">之三十 · 诗词</span><h2>摸鱼儿 · 雁丘词（并序）</h2><p class="p-meta">金 · 元好问 ｜ 底本：《遗山先生文集》；参《遗山乐府》校注本</p></div>
+<div class="normal-view">
+<div class="original">
+<p>【序】乙丑岁赴试并州，道逢捕雁者云："今旦获一雁，杀之矣。其脱网者悲鸣不能去，竟自投于地而死。"予因买得之，葬之汾水之上，垒<sup class="py">1</sup>石为识，号曰雁丘。同行者多为赋诗，予亦有《雁丘词》。旧所作无宫商，今改定之。</p>
+<p>问世间，情为何物，直教<sup class="yi">1</sup>生死相许？天南地北双飞客，老翅几回寒暑。欢乐趣，离别苦，就中更有痴儿女。君应有语：渺万里层云，千山暮雪，只影向谁去？</p>
+<p>横汾路，寂寞当年箫鼓，荒烟依旧平楚<sup class="yi">2</sup>。招魂楚些<sup class="py">2</sup><sup class="yi">3</sup>何嗟及，山鬼暗啼风雨。天也妒，未信与、莺儿燕子俱黄土。千秋万古，为留待骚人，狂歌痛饮，来访雁丘处。</p>
+</div>
+<div class="p-block"><h3>赏析</h3><p class="sh">十六岁的元好问赴试途中遇捕雁者：脱网之雁悲鸣不去，竟自投于地殉死。少年埋雁筑丘，问出了千古第一情问："问世间，情为何物，直教生死相许？"上片为殉雁设想"渺万里层云，千山暮雪，只影向谁去"的生离；下片引汉武帝《秋风辞》的横汾旧事——当年箫鼓今寂寞，遂有招魂之叹；"天也妒"翻出真情为天地所妒，末以千秋万古、骚人来访作结。其地位本在金元词史之冠，金庸小说的传播只是放大，不是来源。</p></div>
+<div class="p-block"><h3>批注 · 意思</h3><ol class="yi-list">
+<li>直教：竟使。</li>
+<li>平楚：平林、远望之林莽；楚=丛木。</li>
+<li>招魂楚些：《楚辞·招魂》句尾皆用"些"字；"何嗟及"=招魂也无济于事。</li>
+</ol></div>
+<div class="p-block"><h3>批注 · 生僻字读音</h3><ol class="py-list">
+<li><b>垒</b>（lěi）：堆砌。</li>
+<li><b>些</b>（suò）：《楚辞》句末语气词。</li>
+</ol></div>
+<button class="btn2 primary" onclick="openDuo('p30')">对照翻译 ⇄</button>
+</div>
+<div class="duo-view">
+<div class="r-bar noprint"><button onclick="backDuo('p30')">← 返回原文视图</button></div>
+<div class="duo-head"><div>原 文</div><div>译 文</div></div>
+<div class="duo-grid"></div>
+<div class="tr-data" hidden>
+<p>【序】乙丑年我赴并州应试，路上遇到捕雁的人说："今天早晨捉到一只大雁，杀了。另一只脱网的悲鸣着不肯离开，竟自己撞到地上死了。"我于是把它买下来，葬在汾水边上，垒石作为标记，称它为"雁丘"。同行的朋友多有赋诗的，我也写了《雁丘词》。旧作不合音律，如今修改定稿。</p>
+<p>请问这人世间，情究竟是什么东西，竟能让人用生死来相互托付？它们是天南地北双宿双飞的旅伴，那一双老翅膀经历过多少个寒来暑往。相聚有欢乐的趣味，离别有痛苦的煎熬，这中间更有痴情的儿女。你心里应该说过：前路万里层云渺茫，千山暮雪沉沉，只剩一个孤单的身影，我向谁飞去？</p>
+<p>这是汉武帝横渡汾水的旧路，当年的箫鼓声早已寂寞，荒烟蔓草间依旧是无边的林莽。即使唱着《楚辞》的调子招魂，又哪里来得及？风雨里只有山鬼在暗中悲啼。上天也妒忌这份真情，我不信它会像寻常莺燕一样同归黄土。千秋万古之后，这份深情还将留待诗人词客，狂歌痛饮之后，来寻访这雁丘的所在。</p>
+</div>
+</div>
+</section>
+
+<!-- 占位 -->
+<section class="piece" id="p31">
+<div class="p-head"><span class="p-no">第二批 · 文章十五篇</span><h2>待 录 入</h2><p class="p-meta">《太史公自序》《典论·论文》《洛神赋》《与山巨源绝交书》《芜城赋》《诗品序》《哀江南赋序》《吊古战场文》《送李愿归盘谷序》《秋声赋》《后赤壁赋》《金石录后序》《指南录后序》《西湖七月半》《祭妹文》——第二批逐篇录校后补入。</p></div>
+</section>
+<section class="piece" id="p46">
+<div class="p-head"><span class="p-no">第三批 · 史传五篇</span><h2>待 录 入</h2><p class="p-meta">《史记·项羽本纪》（全篇）《晋公子重耳之亡》（《左传》僖二十三年＋二十四年收尾）《冯谖客孟尝君》《汉书·霍光传》（全篇）《后汉书·班超传》（全篇）——第三批逐篇录校后补入。</p></div>
+</section>
+
+</div>
+
+<script>
+const pieces=[...document.querySelectorAll('.piece')].filter(p=>p.querySelector('.original'));
+const titles=pieces.map(p=>({id:p.id,t:p.querySelector('h2').textContent,a:p.querySelector('.p-meta').textContent.split('｜')[0].trim(),q:(p.querySelector('.original p')||p.querySelector('.original')).textContent.replace(/\s+/g,'').slice(0,26)+'……'}));
+const grid=document.getElementById('grid');
+titles.forEach((it,i)=>{
+  const c=document.createElement('div');c.className='card';
+  c.innerHTML='<div class="t">'+String(i+1).padStart(2,'0')+' '+it.t+'</div><div class="a">'+it.a+'</div><div class="q">'+it.q+'</div>';
+  c.onclick=()=>openPiece(it.id);grid.appendChild(c);});
+let cur=null;
+function showPiece(id){
+  document.querySelectorAll('.piece').forEach(p=>p.style.display='none');
+  document.getElementById(id).style.display='block';
+  document.getElementById('gridPage').style.display='none';
+  document.getElementById('reader').style.display='block';
+  const sec=document.getElementById(id);
+  const old=sec.querySelector('.r-bar.top');if(old)old.remove();
+  const bar=document.createElement('div');bar.className='r-bar top noprint';
+  bar.innerHTML='<button onclick="back()">← 返回目录</button><button onclick="step(-1)">上一篇</button><button onclick="step(1)">下一篇</button>';
+  sec.prepend(bar);
+  sec.querySelector('.normal-view').style.display='block';
+  sec.querySelector('.duo-view').style.display='none';
+  window.scrollTo(0,0);}
+function openPiece(id){cur=id;showPiece(id);}
+function back(){document.getElementById('gridPage').style.display='block';
+  document.getElementById('reader').style.display='none';window.scrollTo(0,0);}
+function step(d){const i=titles.findIndex(t=>t.id===cur);const n=titles[i+d];if(n){cur=n.id;showPiece(n.id);}}
+function openDuo(id){
+  const sec=document.getElementById(id);
+  const duo=sec.querySelector('.duo-grid');
+  if(!duo.dataset.built){
+    const src=[...sec.querySelectorAll('.original p')];
+    const trs=[...sec.querySelectorAll('.tr-data p')];
+    src.forEach((sp,i)=>{
+      const l=document.createElement('div');l.className='duo-src';l.innerHTML=sp.innerHTML;
+      const r=document.createElement('div');r.className='duo-tr';
+      r.innerHTML=(trs[i]&&trs[i].innerHTML)||'';
+      duo.appendChild(l);duo.appendChild(r);});
+    duo.dataset.built='1';}
+  sec.querySelector('.normal-view').style.display='none';
+  sec.querySelector('.duo-view').style.display='block';
+  window.scrollTo(0,0);}
+function backDuo(id){
+  const sec=document.getElementById(id);
+  sec.querySelector('.duo-view').style.display='none';
+  sec.querySelector('.normal-view').style.display='block';
+  window.scrollTo(0,0);}
+</script>
+</body>
+</html>
