@@ -46,15 +46,16 @@
   .r-bar{display:flex;gap:10px;margin-bottom:26px;flex-wrap:wrap;}
   .r-bar button,.btn2{font-family:inherit;font-size:13.5px;padding:7px 18px;border-radius:20px;border:1px solid var(--line);background:#fff;color:var(--sub);cursor:pointer;}
   .r-bar button:hover,.btn2:hover{background:var(--ink);color:#f3ece0;}
-  .p-head{text-align:center;border-bottom:2px solid var(--line);padding-bottom:18px;margin-bottom:26px;}
+  .p-head{text-align:center;border-bottom:2px solid var(--line);padding-bottom:18px;margin-bottom:26px;position:relative;}
   .p-head .p-no{font-size:13px;color:#b3a58c;letter-spacing:3px;}
   .p-head h2{font-size:26px;letter-spacing:4px;margin:8px 0 6px;}
   .p-head .p-meta{font-size:12.5px;color:var(--sub);}
   .original{font-size:19px;line-height:2.4;padding:26px 30px;background:#fffdf7;border:1px solid var(--line);border-radius:8px;}
   .original p{margin:0 0 16px;}
   .original p:last-child{margin-bottom:0;}
-  sup.yi{color:#8c2f24;font-size:.62em;font-weight:700;margin:0 1px;}
-  sup.py{color:#2e6e46;font-size:.62em;font-weight:700;margin:0 1px;}
+  sup.yi,sup.py{display:inline-block;width:1.55em;height:1.55em;line-height:1.45em;text-align:center;border-radius:50%;font-size:.66em;font-weight:700;margin:0 1px;vertical-align:super;}
+  sup.yi{color:#8c2f24;border:1px solid #cf9a90;background:#fdf4f2;}
+  sup.py{color:#2e6e46;border:1px solid #9cc4ab;background:#eff7f1;}
   .p-block{margin-top:26px;}
   .p-block h3{font-size:16px;letter-spacing:3px;color:var(--accent2);border-left:4px solid var(--accent2);padding-left:10px;margin-bottom:10px;}
   .p-block p.sh{font-size:14.5px;color:#4c4437;text-align:justify;}
@@ -65,6 +66,17 @@
   ol.py-list li{counter-increment:py;font-size:13.5px;color:#2f5c46;background:#eff7f1;border-left:3px solid #7db894;padding:7px 12px 7px 34px;margin-bottom:6px;border-radius:4px;position:relative;}
   ol.py-list li::before{content:counter(py);position:absolute;left:10px;top:9px;width:18px;height:18px;background:#2e6e46;color:#fff;border-radius:50%;font-size:11px;text-align:center;line-height:18px;font-family:sans-serif;}
   ol.py-list li b{color:#1f5c3d;}
+  /* 已学习勾选 */
+  .lk{display:flex;align-items:center;gap:6px;margin-top:9px;font-size:12px;color:#a89c88;cursor:pointer;user-select:none;}
+  .lkbox{width:14px;height:14px;border:1.5px solid #c9bfa8;border-radius:3px;display:inline-block;position:relative;flex:0 0 14px;}
+  .lk:hover .lkbox{border-color:var(--accent);}
+  .lk .lktxt{display:none;}
+  .lk.on .lkbox{background:#2e6e46;border-color:#2e6e46;}
+  .lk.on .lkbox::after{content:"";position:absolute;left:3.5px;top:1px;width:4px;height:7px;border:solid #fff;border-width:0 2px 2px 0;transform:rotate(45deg);}
+  .lk.on .lktxt{display:inline;color:#2e6e46;}
+  .lkbtn{position:absolute;top:0;right:0;font-family:inherit;font-size:11.5px;padding:3px 11px;border-radius:12px;border:1px solid #c9bfa8;background:#fff;color:#a89c88;cursor:pointer;letter-spacing:1px;}
+  .lkbtn:hover{border-color:var(--accent);}
+  .lkbtn.on{background:#eff7f1;border-color:#7db894;color:#2e6e46;}
   .btn2.primary{background:var(--accent);border-color:var(--accent);color:#fff;font-size:15px;padding:10px 30px;display:block;margin:30px auto 0;}
   /* 双栏对照视图 */
   .duo-view{display:none;}
@@ -94,7 +106,7 @@
 <div class="cover">
   <h1>中国古代诗文六十篇</h1>
   <div class="c2">全篇原文 · 编号批注（读音／意思） · 赏析 · 双栏对照翻译</div>
-  <div class="c3">选目四条：整篇崇高，非单句出名；文坛崇高，非民间流传；水平高，非知名度高；十二年基础教育（含旧人教体系）未收录。<br>原文以所据权威底本为准，一字不删改。</div>
+  <div class="c3">原文以所据权威底本为准，一字不删改。</div>
   <div class="c4">诗词三十七 · 文章十八 · 史传五 ｜ 共六十篇</div>
 </div>
 
@@ -4056,7 +4068,8 @@ const titles=pieces.map(p=>({id:p.id,t:p.querySelector('h2').textContent,a:p.que
 const grid=document.getElementById('grid');
 titles.forEach((it,i)=>{
   const c=document.createElement('div');c.className='card';c.id='card-'+it.id;
-  c.innerHTML='<div class="t">'+String(i+1).padStart(2,'0')+' '+it.t+'</div><div class="a">'+it.a+'</div><div class="q">'+it.q+'</div>';
+  c.innerHTML='<div class="t">'+String(i+1).padStart(2,'0')+' '+it.t+'</div><div class="a">'+it.a+'</div><div class="q">'+it.q+'</div><div class="lk" data-id="'+it.id+'"><span class="lkbox"></span><span class="lktxt">已学习</span></div>';
+  c.querySelector('.lk').addEventListener('click',e=>{e.stopPropagation();toggleLearned(it.id);});
   c.onclick=()=>openPiece(it.id);grid.appendChild(c);});
 let cur=null;
 document.querySelectorAll('.toc-cols a').forEach(a=>{a.addEventListener('click',e=>{const h=a.getAttribute('href');if(h&&h.indexOf('#p')===0){e.preventDefault();locate(h.slice(1));}});});
@@ -4107,6 +4120,24 @@ function backDuo(id){
   sec.querySelector('.duo-view').style.display='none';
   sec.querySelector('.normal-view').style.display='block';
   window.scrollTo(0,0);}
+
+/* ---- 已学习勾选：首页卡片 ⇄ 整篇页 联动，localStorage 持久化 ---- */
+const LKEY='gw50_learned';
+function learnedSet(){try{return new Set(JSON.parse(localStorage.getItem(LKEY)||'[]'));}catch(e){return new Set();}}
+function learnedSave(s){try{localStorage.setItem(LKEY,JSON.stringify([...s]));}catch(e){}}
+let learned=learnedSet();
+function renderLearned(){
+  document.querySelectorAll('.lk').forEach(el=>el.classList.toggle('on',learned.has(el.dataset.id)));
+  document.querySelectorAll('.lkbtn').forEach(el=>{
+    const on=learned.has(el.dataset.id);
+    el.classList.toggle('on',on);
+    el.textContent=on?'\u2713 \u5df2\u5b66\u4e60':'\u25cb \u6807\u8bb0\u5df2\u5b66\u4e60';});}
+function toggleLearned(id){if(learned.has(id)){learned.delete(id);}else{learned.add(id);}learnedSave(learned);renderLearned();}
+pieces.forEach(p=>{
+  const h=p.querySelector('.p-head');if(!h)return;
+  const b=document.createElement('button');b.className='lkbtn noprint';b.dataset.id=p.id;
+  b.onclick=()=>toggleLearned(p.id);h.appendChild(b);});
+renderLearned();
 </script>
 </body>
 </html>
