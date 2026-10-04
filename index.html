@@ -20,6 +20,19 @@
   .toc-cols a:hover{background:#efe9db;}
   .toc-cols .n{color:#b3a58c;min-width:30px;}
   .toc-cols .soon{color:#b9ad97;font-style:italic;}
+  .toc-note{font-size:12.5px;color:var(--sub);margin-bottom:24px;}
+  .toc-group{margin-bottom:26px;}
+  .toc-era{font-size:17px;font-weight:700;color:var(--accent);letter-spacing:4px;border-bottom:2px solid var(--line);padding-bottom:6px;margin-bottom:10px;}
+  .toc-era small{font-size:12px;color:#b3a58c;font-weight:400;letter-spacing:1px;margin-left:12px;}
+  .toc-block{display:flex;gap:12px;align-items:flex-start;margin-bottom:10px;}
+  .toc-block .bk{flex:0 0 48px;text-align:center;font-size:12px;letter-spacing:3px;text-indent:3px;color:#fff;border-radius:4px;padding:4px 0;margin-top:5px;}
+  .toc-block.b-shi .bk{background:var(--accent);}
+  .toc-block.b-wen .bk{background:var(--accent2);}
+  .toc-block.b-shi2 .bk{background:#8a6d3b;}
+  .toc-block .toc-cols{flex:1;}
+  .toc-cols .soonline{display:flex;gap:8px;font-size:14px;color:#b9ad97;font-style:italic;padding:5px 8px;border-bottom:1px dashed var(--line);}
+  .card.flash{animation:cardflash 1.9s ease;}
+  @keyframes cardflash{0%{background:#f3e4c2;box-shadow:0 0 0 3px var(--accent);transform:translateY(-2px);}55%{background:#f3e4c2;box-shadow:0 0 0 3px var(--accent);}100%{background:var(--card);box-shadow:0 1px 3px rgba(60,50,30,.06);}}
   .grid-page{max-width:1060px;margin:0 auto;padding:30px 20px 80px;}
   .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(330px,1fr));gap:14px;}
   .card{background:var(--card);border:1px solid var(--line);border-radius:8px;padding:14px 16px;cursor:pointer;box-shadow:0 1px 3px rgba(60,50,30,.06);transition:transform .12s;}
@@ -87,53 +100,164 @@
 
 <div class="toc-page">
   <h2>目 录</h2>
-  <div class="toc-cols">
-    <a href="#p01"><span class="n">01</span>诗经·豳风·七月</a>
-    <a href="#p02"><span class="n">02</span>上邪（汉乐府）</a>
-    <a href="#p03"><span class="n">03</span>行行重行行（古诗十九首）</a>
-    <a href="#p04"><span class="n">04</span>燕歌行（曹丕）</a>
-    <a href="#p05"><span class="n">05</span>咏怀·其一（阮籍）</a>
-    <a href="#p06"><span class="n">06</span>咏史·其二（左思）</a>
-    <a href="#p07"><span class="n">07</span>读山海经·其十（陶渊明）</a>
-    <a href="#p08"><span class="n">08</span>代悲白头翁（刘希夷）</a>
-    <a href="#p09"><span class="n">09</span>感遇·其一（张九龄）</a>
-    <a href="#p10"><span class="n">10</span>终南山（王维）</a>
-    <a href="#p11"><span class="n">11</span>月下独酌·其一（李白）</a>
-    <a href="#p12"><span class="n">12</span>赠卫八处士（杜甫）</a>
-    <a href="#p13"><span class="n">13</span>秋兴八首（杜甫·全组）</a>
-    <a href="#p14"><span class="n">14</span>山石（韩愈）</a>
-    <a href="#p15"><span class="n">15</span>西塞山怀古（刘禹锡）</a>
-    <a href="#p16"><span class="n">16</span>金铜仙人辞汉歌（李贺）</a>
-    <a href="#p17"><span class="n">17</span>马嵬·其二（李商隐）</a>
-    <a href="#p18"><span class="n">18</span>浪淘沙令（李煜）</a>
-    <a href="#p19"><span class="n">19</span>八声甘州（柳永）</a>
-    <a href="#p20"><span class="n">20</span>蝶恋花（晏殊）</a>
-    <a href="#p21"><span class="n">21</span>蝶恋花（欧阳修）</a>
-    <a href="#p22"><span class="n">22</span>临江仙（晏几道）</a>
-    <a href="#p23"><span class="n">23</span>明妃曲·其一（王安石）</a>
-    <a href="#p24"><span class="n">24</span>水龙吟·杨花（苏轼）</a>
-    <a href="#p25"><span class="n">25</span>兰陵王·柳（周邦彦）</a>
-    <a href="#p26"><span class="n">26</span>永遇乐（李清照）</a>
-    <a href="#p27"><span class="n">27</span>贺新郎（辛弃疾）</a>
-    <a href="#p28"><span class="n">28</span>暗香·疏影（姜夔）</a>
-    <a href="#p29"><span class="n">29</span>关山月（陆游）</a>
-    <a href="#p30"><span class="n">30</span>摸鱼儿·雁丘词（元好问）</a>
-    <a href="#p31"><span class="n">31</span>太史公自序（司马迁）</a>
-    <a href="#p32"><span class="n">32</span>典论·论文（曹丕）</a>
-    <a href="#p33"><span class="n">33</span>洛神赋（曹植）</a>
-    <a href="#p34"><span class="n">34</span>与山巨源绝交书（嵇康）</a>
-    <a href="#p35"><span class="n">35</span>芜城赋（鲍照）</a>
-    <a href="#p36"><span class="n">36</span>别赋（江淹）</a>
-    <a href="#p37"><span class="n">37</span>诗品序（钟嵘）</a>
-    <a href="#p38"><span class="n">38</span>哀江南赋序（庾信）</a>
-    <a href="#p39"><span class="n">39</span>吊古战场文（李华）</a>
-    <a href="#p40"><span class="n">40</span>秋声赋（欧阳修）</a>
-    <a href="#p41"><span class="n">41</span>后赤壁赋（苏轼）</a>
-    <a href="#p42"><span class="n">42</span>金石录后序（李清照）</a>
-    <a href="#p43"><span class="n">43</span>指南录后序（文天祥）</a>
-    <a href="#p44"><span class="n">44</span>西湖七月半（张岱）</a>
-    <a href="#p45"><span class="n">45</span>祭妹文（袁枚）</a>
-    <a class="soon" href="#"><span class="n">46–50</span>史传五篇（第三批录入中）</a>
+  <div class="toc-note">按朝代分组，组内分「诗词 · 文 · 史」三块 ｜ 点击条目定位到下方对应篇目卡片，点卡片进入全文</div>
+
+  <div class="toc-group">
+    <div class="toc-era">先 秦<small>1 诗 ｜ 史 2 篇待录</small></div>
+    <div class="toc-block b-shi"><span class="bk">诗词</span>
+      <div class="toc-cols">
+        <a href="#p01"><span class="n">01</span>诗经·豳风·七月</a>
+      </div>
+    </div>
+    <div class="toc-block b-shi2"><span class="bk">史</span>
+      <div class="toc-cols">
+        <span class="soonline"><span class="n">46</span>晋公子重耳之亡（《左传》）· 待录</span>
+        <span class="soonline"><span class="n">47</span>冯谖客孟尝君（《战国策》）· 待录</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="toc-group">
+    <div class="toc-era">两 汉<small>2 诗 · 1 文 ｜ 史 3 篇待录</small></div>
+    <div class="toc-block b-shi"><span class="bk">诗词</span>
+      <div class="toc-cols">
+        <a href="#p02"><span class="n">02</span>上邪（汉乐府）</a>
+        <a href="#p03"><span class="n">03</span>行行重行行（古诗十九首）</a>
+      </div>
+    </div>
+    <div class="toc-block b-wen"><span class="bk">文</span>
+      <div class="toc-cols">
+        <a href="#p31"><span class="n">31</span>太史公自序（司马迁）</a>
+      </div>
+    </div>
+    <div class="toc-block b-shi2"><span class="bk">史</span>
+      <div class="toc-cols">
+        <span class="soonline"><span class="n">48</span>项羽本纪（《史记》）· 待录</span>
+        <span class="soonline"><span class="n">49</span>霍光传（《汉书》）· 待录</span>
+        <span class="soonline"><span class="n">50</span>班超传（《后汉书》）· 待录</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="toc-group">
+    <div class="toc-era">三国 魏<small>1 诗 · 3 文</small></div>
+    <div class="toc-block b-shi"><span class="bk">诗词</span>
+      <div class="toc-cols">
+        <a href="#p04"><span class="n">04</span>燕歌行（曹丕）</a>
+      </div>
+    </div>
+    <div class="toc-block b-wen"><span class="bk">文</span>
+      <div class="toc-cols">
+        <a href="#p32"><span class="n">32</span>典论·论文（曹丕）</a>
+        <a href="#p33"><span class="n">33</span>洛神赋（曹植）</a>
+        <a href="#p34"><span class="n">34</span>与山巨源绝交书（嵇康）</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="toc-group">
+    <div class="toc-era">魏晋南北朝<small>3 诗 · 4 文</small></div>
+    <div class="toc-block b-shi"><span class="bk">诗词</span>
+      <div class="toc-cols">
+        <a href="#p05"><span class="n">05</span>咏怀·其一（阮籍）</a>
+        <a href="#p06"><span class="n">06</span>咏史·其二（左思）</a>
+        <a href="#p07"><span class="n">07</span>读山海经·其十（陶渊明）</a>
+      </div>
+    </div>
+    <div class="toc-block b-wen"><span class="bk">文</span>
+      <div class="toc-cols">
+        <a href="#p35"><span class="n">35</span>芜城赋（鲍照）</a>
+        <a href="#p36"><span class="n">36</span>别赋（江淹）</a>
+        <a href="#p37"><span class="n">37</span>诗品序（钟嵘）</a>
+        <a href="#p38"><span class="n">38</span>哀江南赋序（庾信）</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="toc-group">
+    <div class="toc-era">唐<small>10 诗 · 1 文</small></div>
+    <div class="toc-block b-shi"><span class="bk">诗词</span>
+      <div class="toc-cols">
+        <a href="#p08"><span class="n">08</span>代悲白头翁（刘希夷）</a>
+        <a href="#p09"><span class="n">09</span>感遇·其一（张九龄）</a>
+        <a href="#p10"><span class="n">10</span>终南山（王维）</a>
+        <a href="#p11"><span class="n">11</span>月下独酌·其一（李白）</a>
+        <a href="#p12"><span class="n">12</span>赠卫八处士（杜甫）</a>
+        <a href="#p13"><span class="n">13</span>秋兴八首（杜甫·全组）</a>
+        <a href="#p14"><span class="n">14</span>山石（韩愈）</a>
+        <a href="#p15"><span class="n">15</span>西塞山怀古（刘禹锡）</a>
+        <a href="#p16"><span class="n">16</span>金铜仙人辞汉歌（李贺）</a>
+        <a href="#p17"><span class="n">17</span>马嵬·其二（李商隐）</a>
+      </div>
+    </div>
+    <div class="toc-block b-wen"><span class="bk">文</span>
+      <div class="toc-cols">
+        <a href="#p39"><span class="n">39</span>吊古战场文（李华）</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="toc-group">
+    <div class="toc-era">五代 · 南唐<small>1 词</small></div>
+    <div class="toc-block b-shi"><span class="bk">诗词</span>
+      <div class="toc-cols">
+        <a href="#p18"><span class="n">18</span>浪淘沙令（李煜）</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="toc-group">
+    <div class="toc-era">宋<small>11 诗词 · 4 文</small></div>
+    <div class="toc-block b-shi"><span class="bk">诗词</span>
+      <div class="toc-cols">
+        <a href="#p19"><span class="n">19</span>八声甘州（柳永）</a>
+        <a href="#p20"><span class="n">20</span>蝶恋花（晏殊）</a>
+        <a href="#p21"><span class="n">21</span>蝶恋花（欧阳修）</a>
+        <a href="#p22"><span class="n">22</span>临江仙（晏几道）</a>
+        <a href="#p23"><span class="n">23</span>明妃曲·其一（王安石）</a>
+        <a href="#p24"><span class="n">24</span>水龙吟·杨花（苏轼）</a>
+        <a href="#p25"><span class="n">25</span>兰陵王·柳（周邦彦）</a>
+        <a href="#p26"><span class="n">26</span>永遇乐（李清照）</a>
+        <a href="#p27"><span class="n">27</span>贺新郎（辛弃疾）</a>
+        <a href="#p28"><span class="n">28</span>暗香·疏影（姜夔）</a>
+        <a href="#p29"><span class="n">29</span>关山月（陆游）</a>
+      </div>
+    </div>
+    <div class="toc-block b-wen"><span class="bk">文</span>
+      <div class="toc-cols">
+        <a href="#p40"><span class="n">40</span>秋声赋（欧阳修）</a>
+        <a href="#p41"><span class="n">41</span>后赤壁赋（苏轼）</a>
+        <a href="#p42"><span class="n">42</span>金石录后序（李清照）</a>
+        <a href="#p43"><span class="n">43</span>指南录后序（文天祥）</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="toc-group">
+    <div class="toc-era">金<small>1 词</small></div>
+    <div class="toc-block b-shi"><span class="bk">诗词</span>
+      <div class="toc-cols">
+        <a href="#p30"><span class="n">30</span>摸鱼儿·雁丘词（元好问）</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="toc-group">
+    <div class="toc-era">明<small>1 文</small></div>
+    <div class="toc-block b-wen"><span class="bk">文</span>
+      <div class="toc-cols">
+        <a href="#p44"><span class="n">44</span>西湖七月半（张岱）</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="toc-group">
+    <div class="toc-era">清<small>1 文</small></div>
+    <div class="toc-block b-wen"><span class="bk">文</span>
+      <div class="toc-cols">
+        <a href="#p45"><span class="n">45</span>祭妹文（袁枚）</a>
+      </div>
+    </div>
   </div>
 </div>
 
@@ -2579,11 +2703,20 @@ const pieces=[...document.querySelectorAll('.piece')].filter(p=>p.querySelector(
 const titles=pieces.map(p=>({id:p.id,t:p.querySelector('h2').textContent,a:p.querySelector('.p-meta').textContent.split('｜')[0].trim(),q:(p.querySelector('.original p')||p.querySelector('.original')).textContent.replace(/\s+/g,'').slice(0,26)+'……'}));
 const grid=document.getElementById('grid');
 titles.forEach((it,i)=>{
-  const c=document.createElement('div');c.className='card';
+  const c=document.createElement('div');c.className='card';c.id='card-'+it.id;
   c.innerHTML='<div class="t">'+String(i+1).padStart(2,'0')+' '+it.t+'</div><div class="a">'+it.a+'</div><div class="q">'+it.q+'</div>';
   c.onclick=()=>openPiece(it.id);grid.appendChild(c);});
 let cur=null;
-document.querySelectorAll('.toc-cols a').forEach(a=>{a.addEventListener('click',e=>{const h=a.getAttribute('href');if(h&&h.indexOf('#p')===0){e.preventDefault();openPiece(h.slice(1));}});});
+document.querySelectorAll('.toc-cols a').forEach(a=>{a.addEventListener('click',e=>{const h=a.getAttribute('href');if(h&&h.indexOf('#p')===0){e.preventDefault();locate(h.slice(1));}});});
+function locate(pid){
+  document.getElementById('gridPage').style.display='block';
+  document.getElementById('reader').style.display='none';
+  document.body.classList.remove('reading');
+  const card=document.getElementById('card-'+pid);
+  if(!card)return;
+  card.scrollIntoView({behavior:'smooth',block:'center'});
+  card.classList.remove('flash');void card.offsetWidth;card.classList.add('flash');
+  setTimeout(function(){card.classList.remove('flash');},1900);}
 function showPiece(id){
   document.querySelectorAll('.piece').forEach(p=>p.style.display='none');
   document.getElementById(id).style.display='block';
